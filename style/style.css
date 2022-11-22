@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://th.bing.com/th/id/OIP.qy7UVkPE39xqLs3S-6GTfAHaE2?pid=ImgDet&rs=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    color: brown;
+}
+h1:hover{
+    color: black;
+}
+/*nosotros*/
+.bloque{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container{
+    margin: 8px;
+    height: 350px;
+    width: 350px;
+    background-color: #CACACA;
+    border-radius: 20px;
+    border: #CACACA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
