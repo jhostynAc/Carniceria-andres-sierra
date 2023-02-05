@@ -12,7 +12,7 @@ body{
 }
 /*nav*/
 nav{
-    width: 1249px;
+    width: 1265px;
     height: 70px;
     background-color:  rgba(207, 199, 199, 0.678);
     display: flex;
@@ -65,7 +65,6 @@ input:checked ~.cont-menu{
     background-image: url(https://th.bing.com/th/id/OIP.iW9wUiUa2HIL1tpyhS0fvAHaHa?pid=ImgDet&rs=1);
     transition: 0.2s;
 }
-/*resto*/
 .cuadro-exotic{
     background-color: rgba(207, 199, 199, 0.678);
     width: 500px;
@@ -96,8 +95,48 @@ main{
     margin-top: 100px;
 }
 img{
+     width: 200px;
+     border-radius: 20px;
+}
+.delante, .atras{
+    position: absolute;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
     width: 200px;
-    border-radius: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.delante{
+    z-index: 2;
+    transition: all 0.4s linear;
+}
+.atras{
+    transition: all 0.4s linear;
+    transform: rotateY(180deg);
+}
+.tarjeta{
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    width: 200px;
+    height: 200px;
+    border-radius: 0px;
+    flex-direction: row;
+}
+.tarjeta:hover .delante{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+.tarjeta:hover .atras{
+    transform: rotateY(360deg);
+    cursor: pointer;
+}
+.info{
+    justify-content: center;
 }
 .cuadro-exotic2{
     background-color: rgba(207, 199, 199, 0.678);
@@ -107,8 +146,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
-    margin-left: 40px;
+    margin-top: 30px;
 }
 .redes .boton{
     display: inline-block;
