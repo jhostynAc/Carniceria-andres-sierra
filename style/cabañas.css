@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*nav*/
+nav{
+    width: 1245px;
+    height: 70px;
+    background-color:  rgba(207, 199, 199, 0.678);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+}
+.cont-menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    padding-top: 35px;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.5s;
+    gap: 20px;
+    background-color:  rgba(207, 199, 199, 0.678);
+    width: 190px;
+    height: 90vh;
+    overflow: hidden;
+}
+.cont-menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.cont-menu li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+input{
+    appearance: none;
+    background-image: url(https://cdn.imgbin.com/1/7/4/imgbin-hamburger-button-cheeseburger-computer-icons-french-fries-hot-dog-UqMRb0MvWumPb9r7NzH9Zdemq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+input:checked ~.cont-menu{
+    display: block;
+}
+.input:checked{
+    background-image: url(https://th.bing.com/th/id/OIP.iW9wUiUa2HIL1tpyhS0fvAHaHa?pid=ImgDet&rs=1);
+    transition: 0.2s;
+}
+/*resto*/
+.cielo-azul{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    background-color: aquamarine;
+}
+.carrousel{
+    width: 400px;
+    margin-left: 100px;
+}
+
+.conteCarrousel{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+
+img{
+    width: 400px;
+    height: 500px;
+}
+.itemCarrousel{
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
+
+.itemCarrouselTarjeta{
+    width: 400px;
+    height: 500px;
+}
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+.container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 200px;
+    padding: 20px;
+  }
+  
+  .container h1 {
+    color: #000000;
+    margin-top: 20px;
+  }
+  .container p{
+    margin-top: 20px;
+  }
+  .read-more-btn {
+    background-color: #4caf50;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px 0px #4caf50;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  
+  .read-more-btn:hover {
+    box-shadow: none;
+    background-color: black;
+    color: #fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+  }
+  
+   
+  .hideText {
+    display: none;
+  }
+  
+  .showText {
+    display: block;
+  }
+.exotic-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boton{
+    background-color: #4caf50;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px 0px #4caf50;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+a{
+    text-decoration: none;
+}
