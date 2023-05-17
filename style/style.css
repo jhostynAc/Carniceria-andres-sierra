@@ -16,7 +16,7 @@ nav{
     justify-content: right;
     align-items: center;
     padding: 0px 50px 0px 50px;
-    position: sticky;
+
     top: 0;
 }
 nav img{
@@ -71,68 +71,85 @@ input:checked ~.cont-menu{
     transition: 0.2s;
 }
 /*resto*/
-.cuadro-exotic{
-    background-color: rgba(224, 0, 0, 0.678);
+.cuadro-exotic1{
+    height: 500px;
     width: 100%;
-    height: 800px;
-    display: flex;
-    align-items: center;
-    background-image: url(../imagenes/IMG-5370.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  
+    background-color: #000;
 }
-.cuadro-exotic h1{
-    font-size: 40px;
-    margin-left: 100px;
-    align-content: center;
+.slider{
+    background-image: url("../imagenes/5.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height:  400px;
+    border-radius: 10px;
+    animation: slide 10s  infinite linear;
+}
+@keyframes slide {
+    25%{background-image: url("../imagenes/5.jpg");}
+    50%{background-image: url("../imagenes/cerdo.jpg");}
+    75%{background-image: url("../imagenes/k.jpg");}
+    100%{background-image: url("../imagenes/res.jpg");}
 }
 .cuadro-exotic2{
-    background-color: rgba(255, 255, 255, 0.678);
     width: 100%;
     height: 800px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background-image: url(../imagenes/01912E01-7917-4DFD-9C51-566A2A149031.JPG);
+    background-image: linear-gradient(rgba(61, 59, 59, 0.644), rgba(133, 129, 129, 0.692)), url('../imagenes/carnicero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .cuadro-exotic2 h1{
+    display: flex;
     font-size: 40px;
-    margin-left: 800px;
     margin-top: 80px;
     color: #000;
+ justify-content: center;
 }
-.cuadro-exotic3{
-    background-color: rgba(0, 0, 0, 0.678);
-    width: 100%;
-    height: 700px;
-    display: flex;
-    align-items: center;
-}
-.info h1{
+.cuadro-exotic2 p{
+    font-size: 20px;
     margin-top: 40px;
     color: #000;
 }
+
+.cuadro-exotic3{
+    background-color: rgb(114, 114, 114);
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    width: 300px;
+    height: 150px;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    border-left:  2px solid #000 ;
+    border-right:  2px solid #000 ;
+}
+.info i{
+    color: #000;
+    font-size: 45px;
+}
+
 .info p{
     margin-top: 30px;
     color: #000;
 }
-.info{
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    background-color: #4267b2;
-    padding: 20px;
-    margin-left: 200px;
-}
-.logo{
-    margin-left: 250px;
-}
-.logo img{
-    width: 350px;
-    height: 350px;
-    border-radius: 20px;
+.bloque{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
 }
 .cuadro-exotic4{
     width: 100%;
