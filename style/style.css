@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: url(../imagenes/cuchillo.png), auto;
 }
 
 /*nav*/
@@ -120,6 +119,121 @@ nav img {
 
 .mapa {
     width: 100%;
-    height: 400px;
+    height: 600px;
     background-color: #000;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.cuadro-exotic3{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+.slider {
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+}
+
+.slider ul li  {
+    position: relative;
+    display: none;
+    height: 100%;
+    color: #ffffff;
+}
+
+.slider ul li h1{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+.slider ul li  p{
+    font-size: 35px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+/* buttons */
+.slider .buttons  {
+    position: absolute;
+    top: 40%;
+    width:  100%;
+}
+.slider .buttons .next {
+    font-size: 2rem;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: #ffffff;
+}    
+.slider .buttons .prev {
+    font-size: 2rem;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: #ffffff;
+}   
+/* slider animation */
+.slider ul li {
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .2} 
+    to {opacity: 1}
+}
+  
+footer{
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img{
+    width: 400px;
+    height: 400px;
+}
+.contenido{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.textos{
+    width: 120px;
+    height: 120px;
+}
+.textos p{
+    margin-top: 15px;
 }
