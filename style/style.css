@@ -25,8 +25,13 @@ nav.bajar {
     background-color: #ffffff;
     position: fixed;
     transition: 0.7s;
+    width: 100%;
+    height: 100px;
 }
-
+.bajar img{
+    width: 0px;
+    height: 0px;
+}
 nav a {
     text-decoration: none;
     font-size: 20px;
@@ -65,7 +70,8 @@ nav img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: gray;
+    background-color: #161A1D;
+    color: #B1A7A6;
 }
 
 .texto {
@@ -90,9 +96,9 @@ nav img {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #000;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    color: #B1A7A6;
+    border-left: 2px solid #B1A7A6;
+    border-right: 2px solid #B1A7A6;
     padding: 10px;
     width: 200px;
     height: 50px;
@@ -132,7 +138,9 @@ iframe{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000000;
+    background-image: url(../imagenes/low-poly-grid-haikei.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .slider {
     border-radius: 5px;
@@ -152,7 +160,7 @@ iframe{
     position: relative;
     display: none;
     height: 100%;
-    color: #ffffff;
+    color: #B1A7A6;
 }
 
 .slider ul li h1{
@@ -212,7 +220,7 @@ iframe{
 }
   
 footer{
-    height: 800px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -224,16 +232,22 @@ footer{
     height: 400px;
 }
 .contenido{
-    height: 300px;
-    width: 300px;
+    height: 600px;
+    width: 600px;
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    align-items: center;
+    gap: 2px;
 }
 .textos{
-    width: 120px;
-    height: 120px;
+    width: 280px;
+    height: 280px;
+}
+.textos h4{
+    margin-top: 65px;
+    font-size: 35px;
 }
 .textos p{
     margin-top: 15px;
+    font-size: 20px;
 }
