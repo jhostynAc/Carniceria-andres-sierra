@@ -35,10 +35,14 @@ nav.bajar {
 nav a {
     text-decoration: none;
     font-size: 20px;
-    padding: 30px;
+    margin: 30px;
     color: #000;
 }
-
+.activa{
+    background-color: #B1A7A6;
+    padding: 10px;
+    border-radius: 25px;
+}
 nav li {
     list-style: none;
 }

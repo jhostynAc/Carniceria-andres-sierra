@@ -20,14 +20,13 @@ nav {
 nav a {
     text-decoration: none;
     font-size: 20px;
-    padding: 30px;
     color: #000;
+    margin: 30px;
 }
-a.activa {
+.activa{
     background-color: #B1A7A6;
+    padding: 10px;
     border-radius: 25px;
-    width: 80px;
-    height: 40px;
 }
 nav li {
     list-style: none;
