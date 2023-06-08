@@ -147,7 +147,7 @@ iframe{
     align-items: center;
     justify-content: center;
     background-image: url(../imagenes/low-poly-grid-haikei.png);
-    background-repeat: no-repeat;
+    background-repeat: round;
     background-size: cover;
 }
 .slider {
