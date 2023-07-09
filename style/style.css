@@ -28,21 +28,25 @@ nav.bajar {
     width: 100%;
     height: 100px;
 }
-.bajar img{
+
+.bajar img {
     width: 0px;
     height: 0px;
 }
+
 nav a {
     text-decoration: none;
     font-size: 20px;
     margin: 30px;
     color: #000;
 }
-.activa{
+
+.activa {
     background-color: #B1A7A6;
     padding: 10px;
     border-radius: 25px;
 }
+
 nav li {
     list-style: none;
 }
@@ -67,10 +71,11 @@ nav img {
     background-size: cover;
 }
 
-.cuadro-exotic1 img{
+.cuadro-exotic1 img {
     width: 400px;
     height: 400px;
 }
+
 .cuadro-exotic2 {
     width: 100%;
     height: 600px;
@@ -136,11 +141,13 @@ nav img {
     height: 600px;
     background-color: #000;
 }
-iframe{
+
+iframe {
     width: 100%;
     height: 100%;
 }
-.cuadro-exotic3{
+
+.cuadro-exotic3 {
     height: 600px;
     width: 100%;
     display: flex;
@@ -150,6 +157,7 @@ iframe{
     background-repeat: round;
     background-size: cover;
 }
+
 .slider {
     border-radius: 5px;
     position: relative;
@@ -161,33 +169,36 @@ iframe{
 .slider ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;  
+    padding: 0;
 }
 
-.slider ul li  {
+.slider ul li {
     position: relative;
     display: none;
     height: 100%;
     color: #B1A7A6;
 }
 
-.slider ul li h1{
+.slider ul li h1 {
     font-size: 35px;
     display: flex;
     justify-content: center;
 }
-.slider ul li  p{
+
+.slider ul li p {
     font-size: 35px;
     margin-top: 25px;
     display: flex;
     justify-content: center;
 }
+
 /* buttons */
-.slider .buttons  {
+.slider .buttons {
     position: absolute;
     top: 40%;
-    width:  100%;
+    width: 100%;
 }
+
 .slider .buttons .next {
     font-size: 2rem;
     right: 0;
@@ -201,7 +212,8 @@ iframe{
     width: 60px;
     height: 60px;
     color: #ffffff;
-}    
+}
+
 .slider .buttons .prev {
     font-size: 2rem;
     left: 0;
@@ -215,19 +227,25 @@ iframe{
     width: 60px;
     height: 60px;
     color: #ffffff;
-}   
+}
+
 /* slider animation */
 .slider ul li {
     animation-name: fade;
     animation-duration: 2.5s;
 }
-  
+
 @keyframes fade {
-    from {opacity: .2} 
-    to {opacity: 1}
+    from {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
 }
-  
-footer{
+
+footer {
     height: 600px;
     display: flex;
     flex-direction: row;
@@ -235,11 +253,12 @@ footer{
     align-items: center;
 }
 
-.imagen img{
+.imagen img {
     width: 400px;
     height: 400px;
 }
-.contenido{
+
+.contenido {
     height: 600px;
     width: 600px;
     display: flex;
@@ -247,15 +266,18 @@ footer{
     align-items: center;
     gap: 2px;
 }
-.textos{
+
+.textos {
     width: 280px;
     height: 280px;
 }
-.textos h4{
+
+.textos h4 {
     margin-top: 65px;
     font-size: 35px;
 }
-.textos p{
+
+.textos p {
     margin-top: 15px;
     font-size: 20px;
 }
