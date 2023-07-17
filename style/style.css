@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 * {
     margin: 0;
     padding: 0;
@@ -250,6 +251,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
+    text-align: center;
     align-items: center;
 }
 
@@ -524,6 +527,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #000;
 }
 
 .imagen img {
@@ -554,4 +558,51 @@ footer {
     margin-top: 15px;
     font-size: 20px;
 }
+}
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover:nth-child(5) {
+    background: linear-gradient(to bottom right,#400E32,#A31ACB,#8B1874,#B71375,#DB005B,#FF8400,#FFBF00,#FFD93D);
+}
+
+.icon:hover:nth-child(3) {
+    
+    background: linear-gradient(to right,#0079FF,#4267b2,#79E0EE );
+}
+
+.icon:hover:nth-child(4) {
+    background: linear-gradient(to bottom right,#39a3e0 ,#000,#2582da,#fb2579,#000,#FB2576)
+}
+
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
 }
