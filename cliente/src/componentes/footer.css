@@ -1,0 +1,38 @@
+footer {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.imagen img {
+    width: 400px;
+    height: 400px;
+}
+
+.contenido {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+}
+
+.textos {
+    width: 280px;
+    height: 280px;
+}
+
+.textos h4 {
+    margin-top: 65px;
+    font-size: 35px;
+}
+
+.textos p {
+    margin-top: 15px;
+    font-size: 20px;
+}
