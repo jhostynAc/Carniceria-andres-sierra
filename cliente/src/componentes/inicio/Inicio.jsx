@@ -1,9 +1,20 @@
-import React from "react";
-import "./body.css"
+import {Link} from "react-router-dom"
+import "../inicio/inicio.css"
 
-function Body() {
+export default function Principal() {
     return (
-        <body>
+        <><body>
+            <nav>
+                <li>
+                    <a href="./index.html" class="activa">Inicio</a>
+                    <link to={"/conocenos"}>Quienes somos</link>
+                </li>
+                <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                <li>
+                    <Link to={"/pedidos"}>Productos</Link>
+                    <Link to={"/contacto"}>Contacto</Link>
+                </li>
+            </nav>
             <div class="cuadro-exotic1">
                 <img src="./imagenes/logo bn_Mesa de trabajo 1.png" alt="" />
             </div>
@@ -71,31 +82,55 @@ function Body() {
                     </div>
                 </div>
             </div>
-        </body>
+        </body><footer>
+                <div class="imagen">
+                    <img src="./imagenes/logo bn_Mesa de trabajo 1.png" alt="" />
+                </div>
+                <div class="contenido">
+                    <div class="textos">
+                        <h4>Contacto</h4>
+                        <p>3147175537</p>
+                    </div>
+                    <div class="textos">
+                        <h4>Horarios</h4>
+                        <p>Nuestros servicios van desde las 8am hasta las 8pm de lunes a sabado <br />
+                            Los domingos Nuestros servicios van desde las 8am hasta las 2pm
+                        </p>
+                    </div>
+                    <div class="icon">
+                        <svg heigth="80" width="80">
+                            <circle cx="40" cy="40" stroke="white" stroke-width="4" fill="none"></circle>
+                        </svg>
+                        <i class='bx bxl-facebook-circle'></i>
+
+                    </div>
+
+                    <div class="icon">
+                        <svg heigth="80" width="80">
+                            <circle cx="40" cy="40" stroke="white" stroke-width="4" fill="none"></circle>
+                        </svg>
+                        <i class="fa-brands fa-tiktok"></i>
+
+                    </div>
+                    <div class="icon">
+                        <svg heigth="80" width="80">
+                            <circle cx="40" cy="40" stroke="white" stroke-width="4" fill="none"></circle>
+                        </svg>
+                        <i class='bx bxl-instagram'></i>
+                    </div>
+                    <div class="textos">
+                        <h4>Direccion</h4>
+                        <p>Vía Vda. Mazo, Santa Elena, Medellín, Antioquia</p>
+                    </div>
+
+                </div>
+            </footer></>
     )
 }
 
-const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
-
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        if (i === index) {
-            slide.style.opacity = 1;
-        } else {
-            slide.style.opacity = 0;
-        }
-    });
-}
-
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-}
-
-setInterval(nextSlide, 3000); 
-
-showSlide(currentSlide);
+window.addEventListener('scroll', function () {
+    var nav = this.document.querySelector('nav');
+    nav.classList.toggle('bajar', window.scrollY > 0);
+});
 
 
-export default Body;

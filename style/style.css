@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +22,7 @@ nav {
 }
 
 nav.bajar {
-    background-color: #ffffff;
+   
     position: fixed;
     transition: 0.7s;
     width: 100%;
@@ -35,8 +34,7 @@ nav.bajar {
     height: 0px;
 }
 
-nav a {
-    text-decoration: none;
+nav link {
     font-size: 20px;
     margin: 30px;
     color: #000;
