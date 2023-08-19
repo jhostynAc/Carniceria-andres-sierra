@@ -6,13 +6,13 @@ export default function Principal() {
         <><body>
             <nav>
                 <li>
-                    <a href="./index.html" class="activa">Inicio</a>
-                    <link to={"/conocenos"}>Quienes somos</link>
+                    <Link href="./index.html" class="activa">Inicio</Link>
+                    <Link to={"/conocenos"}>Quienes somos</Link>
                 </li>
                 <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
                 <li>
                     <Link to={"/pedidos"}>Productos</Link>
-                    <Link to={"/contacto"}>Contacto</Link>
+                    <Link to={"contacto"}>Contacto</Link>
                 </li>
             </nav>
             <div class="cuadro-exotic1">

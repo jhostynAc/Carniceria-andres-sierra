@@ -33,7 +33,7 @@ nav img {
     height: 140px;
     padding: 12px;
 }
-.cuadro-exotic1{
+.cuadro-exotic1_contacto{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,29 +42,29 @@ nav img {
     height: 400px;
     gap: 45px;
 }
-.cuadro-exotic1 h1{
+.cuadro-exotic1_contacto h1{
     font-size: 40px;
     color: #B1A7A6;
-    margin-top: 200px;
+    margin-top: 400px;
 }
-.cuadro-exotic1 p{
+.cuadro-exotic1_contacto p{
     font-size: 30px;
 }
-.cuadro{
+.cuadro_2{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 45px;
 }
-.cuadro  input{
+.cuadro_2  input{
     width: 400px;
     height: 40px;
     border: 0;
     border-bottom: 2px solid black;
     outline: none;
 }
-.cuadro a{
+.cuadro_2 a{
     text-decoration: none;
     color: #000;
     border: 2px solid black;

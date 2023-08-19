@@ -14,10 +14,10 @@ export default function Contacto() {
                     <a href="./contactos.html" class="activa">Contacto</a>
                 </li>
             </nav>
-            <div class="cuadro-exotic1">
+            <div class="cuadro-exotic1_contacto">
                 <h1>Contactos</h1>
                 <p>Aca podras encontrar nuestras formas de contacto para alguna inquietud,queja o reclamo</p>
-                <div class="cuadro">
+                <div class="cuadro_2">
                     <h2>Formulario</h2>
                     <input class="texto1" type="text" placeholder="Nombre" />
                     <input type="email" placeholder="Correo" />
