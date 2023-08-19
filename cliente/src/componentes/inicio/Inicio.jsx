@@ -130,7 +130,7 @@ export default function Principal() {
 
 window.addEventListener('scroll', function () {
     var nav = this.document.querySelector('nav');
-    nav.classList.toggle('bajar', window.scrollY > 0);
+    nav.classList.toggle('bajar_1', window.scrollY > 0);
 });
 
 
