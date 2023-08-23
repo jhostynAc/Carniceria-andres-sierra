@@ -147,13 +147,38 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/public/imagenes/low-poly-grid-haikei.png');
-    background-repeat: round;
-    background-size: cover;
+    background-color: #000;
+}
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.carousel-slider{
+    width: 70%;
+    height: 70%;
+}
+.carousel img{
+    max-width: 50%;
+    height: auto;
+    max-height: 500px;
 }
 
+.carousel button{
+    padding: 5px 10px;
+}
 
-
+.carousel .thumbs-wrapper {
+    margin: 20px;
+    width: 0;
+}
+.thumbs-wrapper {
+    color: #000;
+    font-size: 0px;
+    width: 0;
+    height: 0;
+}
 footer {
     height: 600px;
     display: flex;

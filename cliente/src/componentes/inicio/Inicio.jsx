@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import "../inicio/inicio.css"
+import {Carousel} from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 export default function Principal() {
     return (
@@ -61,6 +63,17 @@ export default function Principal() {
                 </div>
             </div>
             <div class="cuadro-exotic3">
+                <Carousel>
+                    <div>
+                        <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                    </div>
+                    <div>
+                        <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                    </div>
+                    <div>
+                        <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                    </div>
+                </Carousel>
                 </div>
         </body > <footer>
             <div class="imagen">
