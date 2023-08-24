@@ -23,7 +23,7 @@ export default function Pedidos() {
                     </li>
                 </div>
                 <div class="cuadro-2">
-                    <a href=""><i class="fa-regular fa-circle-xmark"></i></a>
+                    <a href="."><i class="fa-regular fa-circle-xmark"></i></a>
                     <img src="https://th.bing.com/th/id/OIP.SIQPH6mufXGcmK17k6TIvQHaE7?pid=ImgDet&rs=1" alt="" />
                     <li>
                         <p>Prudcto</p>
@@ -49,7 +49,7 @@ export default function Pedidos() {
                     <p>costo</p>
                 </div>
                 <div class="boton">
-                    <a href="">enviar</a>
+                    <a href=".">enviar</a>
                 </div>
             </div>
         </body>
