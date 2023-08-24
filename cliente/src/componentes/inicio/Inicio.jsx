@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import "../inicio/inicio.css"
 
+
 export default function Principal() {
     return (
         <><body>
