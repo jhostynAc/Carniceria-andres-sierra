@@ -1,11 +1,12 @@
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 98.60vw;
+    width: 100%;
 }
 nav {
-    width: 982px;
+    width: 100%;
     height: 140px;
     display: flex;
     justify-content: center;
@@ -13,6 +14,7 @@ nav {
     padding: 0px 50px 0px 50px;
     top: 0;
     transition: 0.7s;
+    z-index: 4;
 }
 
 nav.bajar_1 {
@@ -153,7 +155,7 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    width: 0;
 }
 .carousel-slider{
     width: 70%;
@@ -164,20 +166,11 @@ iframe {
     height: auto;
     max-height: 500px;
 }
-
-.carousel button{
-    padding: 5px 10px;
-}
-
 .carousel .thumbs-wrapper {
     margin: 20px;
     width: 0;
-}
-.thumbs-wrapper {
-    color: #000;
-    font-size: 0px;
-    width: 0;
     height: 0;
+    z-index: -1;
 }
 footer {
     height: 600px;
