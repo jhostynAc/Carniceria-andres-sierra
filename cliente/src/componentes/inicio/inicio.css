@@ -165,11 +165,11 @@ iframe {
     max-width: 50%;
     height: auto;
     max-height: 500px;
+    margin: 20px;
 }
 .carousel .thumbs-wrapper {
     margin: 20px;
     width: 0;
-    height: 0;
     z-index: -1;
 }
 footer {

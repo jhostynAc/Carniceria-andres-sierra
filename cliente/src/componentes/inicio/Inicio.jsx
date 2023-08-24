@@ -66,13 +66,10 @@ export default function Principal() {
             <div class="cuadro-exotic3">
                 <Carousel>
                     <div>
-                        <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                        <img src="./imagenes/cartel.png" alt="" />
                     </div>
                     <div>
-                        <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
-                    </div>
-                    <div>
-                        <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                        <img src="./imagenes/repartidor.png" alt="" />
                     </div>
                 </Carousel>
                 </div>
