@@ -8,6 +8,7 @@ import Principal from './componentes/inicio/Inicio';
 import Contacto from './componentes/contactenos/contacto';
 import Pedidos from './componentes/pedidos/pedidos';
 import Conocenos from './componentes/conocenos/conocenos';
+import Ventas from './componentes/ventas/ventas';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +20,7 @@ root.render(
     <Route path='contacto' element={<Contacto/>}></Route>
     <Route path='pedidos' element={<Pedidos/>}></Route>
     <Route path='conocenos' element={<Conocenos/>}></Route>
+    <Route path='ventas' element={<Ventas/>}></Route>
   </Routes>
   </BrowserRouter>
 );

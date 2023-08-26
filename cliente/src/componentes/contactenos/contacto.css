@@ -5,7 +5,7 @@ body {
     width: 98.60vw;
 }
 nav {
-    width: 1249px;
+    width: 982px; 
     height: 140px;
     display: flex;
     justify-content: center;
@@ -13,6 +13,7 @@ nav {
     padding: 0px 50px 0px 50px;
     top: 0;
     transition: 0.7s;
+    z-index: 1;
 }
 nav a {
     text-decoration: none;
