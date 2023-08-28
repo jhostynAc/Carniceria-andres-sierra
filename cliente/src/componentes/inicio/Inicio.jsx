@@ -21,6 +21,45 @@ export default function Principal() {
                 <div class="cuadro-exotic1">
                     <img src="./imagenes/logo bn_Mesa de trabajo 1.png" alt="" />
                 </div>
+                <div class="texto2">
+                    <a href=".">
+                        <div class="botones">
+                            <img src="./imagenes/icons8-cuts-of-beef-40.png" alt="" />
+                            <div class="info">
+                                <h4>res</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=".">
+                        <div class="botones">
+                            <img src="./imagenes/icons8-cuts-of-pork-40.png" alt="" />
+                            <div class="info">
+                                <h4>cerdo</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="botones">
+                            <img src="./imagenes/icons8-pollo-40.png" alt="" />
+                            <div class="info">
+                                <h4>pollo</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="botones">
+                            <img src="./imagenes/icons8-killed-fish-40.png" alt="" />
+                            <div class="info">
+                                <h4>Pescado</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="cuadro-exotic3">
+                <Carousel>
+                    <div>
+                        <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
                 <div class="cuadro-exotic2">
                     <div class="texto">
                         <h1>Nuestros productos</h1>
@@ -125,7 +164,6 @@ export default function Principal() {
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </footer>
-        </>
     )
 }
 

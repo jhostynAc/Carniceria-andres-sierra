@@ -271,40 +271,95 @@ nav img {
     border: 1px solid #ffcaa6;
     background-color: #ffcaa6;
    }
-   /*boton desplegable*/
-   .padre-desplegar {
-    position: relative;
-  }
-  
-  .producto {
-    text-align: center;
-    font-size: 20px;
-    margin: 30px;
-    color: #000;
-    cursor: pointer;
-  }
-  
-  .desplegar {
-    display: none;
-    background-color: #0000005d;
-    z-index: 1;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  
-  .desplegar a {
-    top: 50px;
-    color: black;
-    padding: 12px 16px;
+
+   .carnes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3d3d3;
+    width: 100%;
+    height: 140px;
+}
+.carnes li{
+    list-style:none ;
+    display: flex;
+    flex-direction: row;
+}
+.carnes a{
     text-decoration: none;
-    display: block;
-  }
-  
-  .padre-desplegar:hover .desplegar {
-    display: block;
-  }
-  
-  .desplegar:hover {
-    display: block;
-  }
+    font-size: 20;
+    color: black;  
+    padding: 30px; 
+}
+
+.carnes p{
+    display: flex;
+    justify-content: center;
+}
+.carnes a img{
+    width: 70px;
+    height: 70px;
+}
+
+.galeria{
+    display: flex;
+    width: 800px;
+    height: 430px;
+}
+
+.galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .6s ease;
+}
+
+.galeria img:hover{
+    cursor: pointer;
+    width: 500px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+footer {
+    width: 40px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.imagen img {
+    width: 400px;
+    height: 400px;
+}
+
+.contenido {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+}
+
+.textos {
+    width: 280px;
+    height: 280px;
+}
+
+.textos h4 {
+    margin-top: 65px;
+    font-size: 35px;
+}
+
+.textos p {
+    margin-top: 15px;
+    font-size: 20px;
+}
