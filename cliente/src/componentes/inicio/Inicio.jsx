@@ -29,7 +29,7 @@ export default function Principal() {
                     </p>
                 </div>
                 <div class="texto2">
-                    <a href="">
+                    <a href=".">
                         <div class="botones">
                             <img src="./imagenes/icons8-cuts-of-beef-40.png" alt="" />
                             <div class="info">
@@ -37,7 +37,7 @@ export default function Principal() {
                             </div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href=".">
                         <div class="botones">
                             <img src="./imagenes/icons8-cuts-of-pork-40.png" alt="" />
                             <div class="info">

@@ -5,6 +5,12 @@ body {
     width: 98.60vw;
     
 }
+
+aside{
+    width: 100%;
+    display: auto;
+    flex-direction: row;
+}
 nav {
     width: 1249px;
     height: 140px;
@@ -214,7 +220,8 @@ nav img {
    }
    
    .card-img {
-    background-color: #ffcaa6;
+    background-image: url('https://bidea2.com/wp-content/uploads/2020/10/tomahawk.png');
+    background-repeat: no-repeat;
     height: 40%;
     width: 100%;
     border-radius: .5rem;
