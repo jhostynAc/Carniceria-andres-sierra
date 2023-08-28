@@ -36,6 +36,15 @@ export default function Ventas() {
         setCargo(val.cargo);
         setEdad(val.edad);
     }
+    const eliminar = (val) =>{
+        console.log(val)
+        Axios.delete(`http://localhost:3005/delete/${val.id}`, {
+            id: id
+        }).then(()=>{
+            getHola()
+            alert("se eliminó")
+        })
+    }
     const update = () => {
         Axios.put("http://localhost:3005/update", {
             id: id,
@@ -85,7 +94,7 @@ export default function Ventas() {
                                 editar == true ?
                                     <div>
                                         <button className="btn btn-warning m-2" onClick={update}>actualizar</button>
-                                        <button className="btn btn-danger m-2" onClick={add}>actualizar</button>
+                                        <button className="btn btn-danger m-2" onClick={eliminar}>Cancelar</button>
                                     </div>
                                     : <button className="btn btn-success" onClick={add}>enviar</button>
                             }
@@ -109,7 +118,7 @@ export default function Ventas() {
                                             <td>
                                                 <div className="btn-group" role="group" aria-label="Basic example">
                                                     <button type="button" onClick={() => { editarHola(val) }} className="btn btn-warning">ediar</button>
-                                                    <button type="button" className="btn btn-danger">eliminar</button>
+                                                    <button type="button" className="btn btn-danger" onClick={()=> {eliminar(val)}}>eliminar</button>
                                                 </div>
                                             </td>
                                         </tr>

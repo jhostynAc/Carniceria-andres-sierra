@@ -58,6 +58,19 @@ app.put("/update",(req,res)=>{
     );
 });
 
+app.delete("/delete/:id",(req,res)=>{
+    const id = req.params.id
+    console.log(id)
+    db.query('DELETE FROM hola WHERE id = ?',[id],
+    (err,result)=>{
+        if(err){
+            console.log(err)
+        }else{
+            res.send("se eliminó melo")
+        }
+    })
+})
+
 app.listen(3005,()=>{
     console.log("corriendo");
 })
