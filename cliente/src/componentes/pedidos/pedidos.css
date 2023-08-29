@@ -302,6 +302,14 @@ nav img {
     height: 70px;
 }
 
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 .galeria{
     display: flex;
     width: 800px;
@@ -362,4 +370,18 @@ footer {
 .textos p {
     margin-top: 15px;
     font-size: 20px;
+
+}
+
+.titulo{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.info{
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 60px;
+    font-size: 1.2rem;
 }
