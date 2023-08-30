@@ -45,6 +45,13 @@ export default function Ventas() {
             alert("se eliminó")
         })
     }
+    const limpiar = () =>{
+        setId('')
+        setNombre('')
+        setCargo('')
+        setEdad('')
+        setEditar('')
+    }
     const update = () => {
         Axios.put("http://localhost:3005/update", {
             id: id,
@@ -93,8 +100,8 @@ export default function Ventas() {
                             {
                                 editar == true ?
                                     <div>
-                                        <button className="btn btn-warning m-2" onClick={update}>actualizar</button>
-                                        <button className="btn btn-danger m-2" onClick={eliminar}>Cancelar</button>
+                                         <button className="btn btn-warning m-2" onClick={update}>actualizar</button>
+                                        <button className="btn btn-danger m-2" onClick={limpiar}>Cancelar</button>
                                     </div>
                                     : <button className="btn btn-success" onClick={add}>enviar</button>
                             }

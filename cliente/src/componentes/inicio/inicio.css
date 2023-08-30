@@ -4,46 +4,44 @@ body {
     align-items: center;
     width: 98.60vw;
 }
+
 nav {
-    width: 982px;
+    width: 100%;
     height: 140px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    padding: 0px 50px 0px 50px;
+    justify-content: flex-start;
     top: 0;
     transition: 0.7s;
-    z-index: 1;
+    background-color: #00000042;
 }
 
 nav.bajar_1 {
-    background-color: #ffffff;
+    background-color: #00000059;
     position: fixed;
     transition: 0.7s;
     width: 100%;
     height: 100px;
-}
-
-.bajar_1 img {
-    width: 0px;
-    height: 0px;
+    color: black;
+    z-index: 3;
 }
 
 nav a {
     text-decoration: none;
     font-size: 20px;
     margin: 30px;
-    color: #000;
+    color: #ffffff;
 }
 
 .activa {
-    background-color: #B1A7A6;
-    padding: 10px;
-    border-radius: 25px;
+    border-top: 6px solid #e5383b;
+    padding: 2px;
 }
 
 nav li {
     list-style: none;
+    margin-left: 85px;
 }
 
 nav img {
@@ -52,165 +50,109 @@ nav img {
     padding: 12px;
 }
 
-.cuadro-exotic1 {
+.caja {
     width: 100%;
-    height: 600px;
+    height: 800px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(rgba(61, 59, 59, 0.644), rgba(133, 129, 129, 0.692)), url('https://s1.eestatic.com/2019/03/26/ciencia/nutricion/carnes-dietas-nutricion_386222785_118855389_1706x960.jpg');
-    background-repeat: no-repeat;
+    background-image: url("https://cdn.shopify.com/s/files/1/0086/1064/4028/products/PRIME_NYStrip9-1200x1200-Raw_JUL19_1200x1200.jpg?v=1563808017");
     background-size: cover;
-}
-.cuadro-exotic1 img {
-    width: 400px;
-    height: 400px;
+    background-repeat: no-repeat;
 }
 
-.cuadro-exotic2 {
+.inform {
+    width: 400px;
+    height: 600px;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.inform h1 {
+    color: #ffffff;
+}
+
+.inform p {
+    color: #ffffff;
+}
+
+.caja_inicio {
     width: 100%;
     height: 600px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     background-color: #161A1D;
-    color: #B1A7A6;
-}
-
-.texto {
-    width: 400px;
-    height: 200px;
-    padding: 20px;
-    margin-right: 50px;
-}
-
-.texto h1 {
-    font-size: 40px;
-}
-
-.texto p {
-    font-size: 25px;
-    margin-top: 25px;
-}
-
-.texto2 a {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #B1A7A6;
-    border-left: 2px solid #B1A7A6;
-    border-right: 2px solid #B1A7A6;
-    padding: 40px;
-    width: 200px;
-    height: 50px;
-    margin-left: 50px;
-}
-
-.botones {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
 }
 
-.botones img {
-    margin-right: 25px;
-    width: 40px;
-    height: 40px;
-}
-
-.botones h4 {
-    font-size: 30px;
-}
-
-.botones p {
-    font-size: 20px;
-}
-
-.mapa {
-    width: 260px;
-    height: 260px;
-    background-color: #000;
-}
-
-iframe {
-    width: 100%;
-    height: 100%;
-}
-
-.cuadro-exotic3 {
-    height: 600px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
-}
-
-.carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 0;
-    margin-top: -80px;
-}
-
-.carousel-slider {
-    width: 70%;
-    height: 70%;
-}
-
-.carousel img {
-    max-width: 50%;
-    height: auto;
-    max-height: 400px;
-    margin: 20px;
-}
-.carousel .thumbs-wrapper {
-    margin: 20px;
-    width: 0;
-    z-index: -1;
-}
-footer {
-    width: 40px;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+.caja_inicio h4 {
+    color: #ffffff;
     text-align: center;
-    align-items: center;
+    margin-top: 30px;
 }
 
-.imagen img {
+.lineas {
+    position: relative;
+    text-align: center;
+}
+
+.lineas::before,
+.lineas::after {
+    content: "";
+    position: absolute;
+    top: 50%;
     width: 400px;
-    height: 400px;
+    /* Ajusta este valor para controlar el largo de las líneas */
+    border-top: 1px solid rgb(255, 255, 255);
 }
 
-.contenido {
-    height: 600px;
-    width: 600px;
+.lineas::before {
+    left: 150px;
+}
+
+.lineas::after {
+    right: 150px;
+}
+.caja2_inicio{ 
+    width: 100%;
+    height: 700px;
+    background-color: #161A1D;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    gap: 2px;
 }
 
-.textos {
-    width: 280px;
-    height: 280px;
+.caja2_inicio h4 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
 }
-
-.textos h4 {
+.conte{
     margin-top: 65px;
-    font-size: 35px;
+    display: flex;
+    flex-direction: row ;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
 }
-
-.textos p {
+.tarjeta{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.tarjeta img{
+    width: 100%;
+    height: 300px;
+}
+.tarjeta h3{
+    font-size: 35px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 5px;
+}
+.tarjeta p{
     margin-top: 15px;
     font-size: 20px;
+    color: #ffffff;
 }
