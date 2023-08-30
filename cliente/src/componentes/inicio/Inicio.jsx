@@ -26,32 +26,6 @@ export default function Principal() {
                 </div>
                 <div className="caja_inicio">
                     <h4 className="lineas">Catalogo</h4>
-                    <div className="cont">
-                    <div class="card">
-                        <div class="card-content">
-                            <h2>Escapada natural</h2>
-                            <p>Recarga tu energía en un entorno tranquilo y verde.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h2>Escapada natural</h2>
-                            <p>Recarga tu energía en un entorno tranquilo y verde.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h2>Escapada natural</h2>
-                            <p>Recarga tu energía en un entorno tranquilo y verde.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h2>Escapada natural</h2>
-                            <p>Recarga tu energía en un entorno tranquilo y verde.</p>
-                        </div>
-                    </div>
-                    </div>
                 </div>
                 <div className="caja2_inicio">
                 <h4 className="lineas">servicio</h4>
