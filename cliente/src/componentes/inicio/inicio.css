@@ -112,6 +112,16 @@ nav img {
 .lineas::after {
     right: 150px;
 }
+.con{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    margin-top: 3.5%;
+}
+
 .caja2_inicio{ 
     width: 100%;
     height: 700px;

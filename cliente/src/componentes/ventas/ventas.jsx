@@ -65,17 +65,6 @@ export default function Ventas() {
     }
     return (
         <body>
-            <nav>
-                <li>
-                    <a href="./index.html">Inicio</a>
-                    <a href="./conocenos.html">Quienes somos</a>
-                </li>
-                <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
-                <li>
-                    <a href="./pedido.html">Productos</a>
-                    <a href="./contactos.html" class="activa">Contacto</a>
-                </li>
-            </nav>
             <div className="cont">
                 <div class="container">
                     <div class="card text-center">
