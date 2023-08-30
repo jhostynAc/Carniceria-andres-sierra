@@ -153,7 +153,6 @@ export default function Res() {
                 <div class="product-grid__imagen">
                     <img src="https://brandpetram.imgix.net/redbuchef/vaca/arrachera-gallo-res-de-vaca-mayoristas-en-mexico-redbuchef-3.jpeg" alt=""/>
                 </div>
-
                 <div class="product-grid__info">
                     <p class="product-grid__name">Arrachera</p>
                     <p class="product-grid__price">$9.00 / kg</p>
