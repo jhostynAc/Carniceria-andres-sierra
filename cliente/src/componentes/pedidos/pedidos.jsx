@@ -20,11 +20,12 @@ export default function Pedidos() {
 
             <div class="carnes">
                      <li>
+                    <link to={"./res.jsx"} href="" />
 
-        <a href="">
+        <Link to={"/res"}>
             <img width="80" height="80" src="https://img.icons8.com/dotty/80/cuts-of-beef.png" alt="cuts-of-beef"/>
             <p>Res</p>
-        </a>
+        </Link>
         <a href="">
             <img width="80" height="80" src="https://img.icons8.com/dotty/80/cuts-of-pork.png" alt="cuts-of-pork"/>
             <p>Cerdo</p>
