@@ -5,10 +5,10 @@ html, body{
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 :root{
-    --color1: #135337;
-    --color2:#9CCB9E;
-    --color3: #30303F;
-    --border: #C9C6C6;
+    --color1: #0B090A;
+    --color2:#BA181B;
+    --color3: #0B090A;
+    --border: #D3D3D3;
 }
 
 *{
@@ -19,7 +19,7 @@ html, body{
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: bisque;
+    background-color: #D3D3D3;
 }
 
 .container{
@@ -31,17 +31,23 @@ body{
 
 img{
     max-width: 100%;
+    transition: 300ms;
 }
+img:hover {
+    transform: scala(1,5);
+   }
+   
 
 .banner{
     margin: 50px 0;
 }
 
 .title{
+    text-align: center;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: bolder;
     color: var(--color1);
-    margin-bottom: 30px;
+    margin-bottom: 10%;
 }
 
 .product-grid{
@@ -53,7 +59,7 @@ img{
 
 .product-grid__item{
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: 10%;
     overflow: hidden;
 }
 

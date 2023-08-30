@@ -16,15 +16,10 @@ export default function Pedidos() {
                 <li>
                     <Link to={"contacto"}>Contacto</Link>
                 </li>
-<<<<<<< HEAD
-            </nav>
-            <div class="card">
-                <div class="card-img"></div>
-                <div class="card-info">
-                    <p class="text-title">Product title </p>
-                    <p class="text-body">Product description and details</p>
 
-<<<<<<< HEAD
+            </nav>
+            
+
             <div class="carnes">
                      <li>
                     <link to={"./res.jsx"} href="" />
@@ -48,52 +43,6 @@ export default function Pedidos() {
     </li>
 </div>
 
-
-<section>
-    
- <div class="galeria"> 
-    <img src="https://tiendadecarnesfp.com/wp-content/uploads/2021/03/1-Tilapia-5-1-300x300.jpg" alt="" />
-            <img src="https://tiendadecarnesfp.com/wp-content/uploads/2021/03/7-Espinazo-8-1.jpg" alt="" />
-            <img src="https://media.scoolinary.app/blog/images/2020/07/despiece-carne-de-cerdo.jpg" alt="" />
-            <img src="https://thefoodtech.com/wp-content/uploads/2020/09/maduracion-de-carne-de-pollo.jpg" alt="" />
-            <img src="https://vixark.b-cdn.net/lp-i-i-g/carne-de-res-del-%C3%A9xito-1kg-solomo-y-ca%C3%B1%C3%B3n.jpg" alt="" />
-=======
->>>>>>> cd3fc75b0a8a1849468d9bd30dc2f1a8e6445075
-            </div>
-            <div class="card-footer">
-            <span class="text-title">$499.49</span>
-            <div class="card-button">
-=======
-                <div className="card-button">
->>>>>>> 908f924967c3b83620fc3a528fc64301482f9bfb
-                <svg class="svg-icon" viewBox="0 0 20 20">
-              <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-              <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-              <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-            </svg></div>
-            </nav>
-
-            <div class="carnes">
-                     <li>
-
-        <a href="">
-            <img width="80" height="80" src="https://img.icons8.com/dotty/80/cuts-of-beef.png" alt="cuts-of-beef"/>
-            <p>Res</p>
-        </a>
-        <a href="">
-            <img width="80" height="80" src="https://img.icons8.com/dotty/80/cuts-of-pork.png" alt="cuts-of-pork"/>
-            <p>Cerdo</p>
-        </a>
-        <a href="">
-            <img width="80" height="80" src="https://img.icons8.com/dotty/80/chicken.png" alt="chicken"/>
-            <p>Pollo</p>
-        </a>
-        <a href="">
-            <img width="80" height="80" src="https://img.icons8.com/dotty/80/killed-fish.png" alt="killed-fish"/>
-            <p>Pescado</p>
-        </a>
-    </li>
-</div>
 
 
 <section>

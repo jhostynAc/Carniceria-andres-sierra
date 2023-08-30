@@ -14,6 +14,7 @@ nav {
     padding: 0px 50px 0px 50px;
     top: 0;
     transition: 0.7s;
+    background: #D3D3D3;
 }
 
 nav.bajar {
