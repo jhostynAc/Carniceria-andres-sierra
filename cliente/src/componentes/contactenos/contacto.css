@@ -4,36 +4,7 @@ body {
     align-items: center;
     width: 98.60vw;
 }
-nav {
-    width: 982px; 
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 50px 0px 50px;
-    top: 0;
-    transition: 0.7s;
-    z-index: 1;
-}
-nav a {
-    text-decoration: none;
-    font-size: 20px;
-    color: #000;
-    margin: 30px;
-}
-.activa{
-    background-color: #B1A7A6;
-    padding: 10px;
-    border-radius: 25px;
-}
-nav li {
-    list-style: none;
-}
-nav img {
-    width: 140px;
-    height: 140px;
-    padding: 12px;
-}
+
 .cuadro-exotic1_contacto{
     display: flex;
     flex-direction: column;
