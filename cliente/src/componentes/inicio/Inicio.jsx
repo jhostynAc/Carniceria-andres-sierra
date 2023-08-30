@@ -5,6 +5,61 @@ import Card from 'react-bootstrap/Card';
 
 export default function Principal() {
     return (
+<<<<<<< HEAD
+          <body>
+            <nav>
+                    <li >
+                        <Link href="./index.html" class="activa">Inicio</Link>
+                        <Link to={"/conocenos"}>Quienes somos</Link>
+                    </li>
+                    <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                    <li>
+                        <Link to={"/pedidos"}>Productos</Link>
+                        <Link to={"/ventas"}>Contacto</Link>
+                    </li>
+                </nav>
+                <div class="cuadro-exotic1">
+                    <img src="./imagenes/logo bn_Mesa de trabajo 1.png" alt="" />
+                </div>
+                <div class="texto2">
+                    <a href=".">
+                        <div class="botones">
+                            <img src="./imagenes/icons8-cuts-of-beef-40.png" alt="" />
+                            <div class="info">
+                                <h4>res</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=".">
+                        <div class="botones">
+                            <img src="./imagenes/icons8-cuts-of-pork-40.png" alt="" />
+                            <div class="info">
+                                <h4>cerdo</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="botones">
+                            <img src="./imagenes/icons8-pollo-40.png" alt="" />
+                            <div class="info">
+                                <h4>pollo</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="botones">
+                            <img src="./imagenes/icons8-killed-fish-40.png" alt="" />
+                            <div class="info">
+                                <h4>Pescado</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                
+            
+          </body>
+=======
         <>
             <body>
                 <div className="caja">
