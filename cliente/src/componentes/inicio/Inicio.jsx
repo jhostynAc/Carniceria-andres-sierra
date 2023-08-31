@@ -69,10 +69,29 @@ export default function Principal() {
                     </div>
                 </div>
                 <div className="footer">
-                    
+                    <div className="info">
+                        <h3>Atencion cliente</h3>
+                        <li> <img src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/ffffff/external-telephone-advertisement-tanah-basah-basic-outline-tanah-basah.png" alt="" />3147175537</li>
+                        <li><img src="https://img.icons8.com/fluency-systems-regular/24/ffffff/new-post.png" alt="new-pos" />  andressierra@gmail.com</li>
+                        <li><img src="https://img.icons8.com/material-outlined/24/ffffff/instagram-new--v1.png" alt="" /> andres sierra</li>
+                    </div>
+                    <div className="info">
+                    <h3>Horarios y politica</h3>
+                    <li><img src="https://img.icons8.com/material-outlined/24/ffffff/user--v1.png" alt="" /> lunes a domingo de <br /> 7:30 Am a 7:30 Pm</li>
+                    <li><img src="https://img.icons8.com/external-line-zulfa-mahendra/24/ffffff/external-delivery-food-delivery-line-zulfa-mahendra.png" alt="" /> Domicilios a partir de los <br /> 50.000</li>
+                    </div>
+                    <div className="info">
+                        <h3>sede</h3>
+                        <li>
+                            <img src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/ffffff/external-location-social-media-interface-anggara-basic-outline-anggara-putra.png" alt="" />
+                            PUNTO DE VENTA <br /> 
+                            LA GRANJA, Vía Vda. Mazo, Santa Elena, <br />
+                             Medellín, Antioquia</li>
+                    </div>
                 </div>
             </body > 
             <footer>
+                <h5>Copyrigth © 2023 Andres Sierra </h5>
             </footer>
         </>
     )
