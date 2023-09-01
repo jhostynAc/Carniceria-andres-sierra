@@ -12,8 +12,13 @@ export default function Principal() {
                         <li >
                             <Link href="./index.html" class="activa">Inicio</Link>
                             <Link to={"/conocenos"}>Quienes somos</Link>
+<<<<<<< HEAD
                             <Link to={"/pedidos"}>Productos</Link>
                             <Link to={"/conocenos"}>Contacto</Link>
+=======
+                            <Link to={"/ventas"}>Productos</Link>
+                            <Link to={"/pedidos"}>Contacto</Link>
+>>>>>>> fcb5a7c1a56055bf89802a6e5929a50e896a1e1b
                         </li>
                         <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
                     </nav>
