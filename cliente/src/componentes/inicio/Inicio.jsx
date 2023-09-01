@@ -12,7 +12,7 @@ export default function Principal() {
                         <li >
                             <Link href="./index.html" class="activa">Inicio</Link>
                             <Link to={"/conocenos"}>Quienes somos</Link>
-                            <Link to={"/ventas"}>Productos</Link>
+                            <Link to={"/pedidos"}>Productos</Link>
                             <Link to={"/conocenos"}>Contacto</Link>
                         </li>
                         <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
