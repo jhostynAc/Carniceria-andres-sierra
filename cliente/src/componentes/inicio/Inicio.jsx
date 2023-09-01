@@ -10,15 +10,10 @@ export default function Principal() {
                 <div className="caja">
                     <nav>
                         <li >
-                            <Link href="./index.html" class="activa">Inicio</Link>
+                            <Link to={"/"} class="activa">Inicio</Link>
                             <Link to={"/conocenos"}>Quienes somos</Link>
-<<<<<<< HEAD
-                            <Link to={"/pedidos"}>Productos</Link>
-                            <Link to={"/conocenos"}>Contacto</Link>
-=======
-                            <Link to={"/ventas"}>Productos</Link>
-                            <Link to={"/pedidos"}>Contacto</Link>
->>>>>>> fcb5a7c1a56055bf89802a6e5929a50e896a1e1b
+                            <Link to={"/productos"}>Productos</Link>
+                            <Link to={"/contacto"}>Contacto</Link>
                         </li>
                         <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
                     </nav>
@@ -37,23 +32,23 @@ export default function Principal() {
                     <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
                         <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/cuts-of-pork.png"/>
                         <Card.Body>
-                            <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Go somewhere</Button>
+                            <Link to={"productos"}><Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Cerdo</Button></Link>
                         </Card.Body>
                     </Card>
                     <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none' }}>
                         <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/cuts-of-beef.png" />
                         <Card.Body>
-                            <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Go somewhere</Button>
+                            <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Res</Button>
                         </Card.Body>
                     </Card> <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
                         <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/chicken.png" />
                         <Card.Body>
-                            <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Go somewhere</Button>
+                            <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Pollo</Button>
                         </Card.Body>
                     </Card> <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
-                        <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/killed-fish.png" />
+                        <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/clown-fish.png" />
                         <Card.Body>
-                            <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Go somewhere</Button>
+                            <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Pescado</Button>
                         </Card.Body>
                     </Card>
                     </div>

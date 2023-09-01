@@ -1,10 +1,19 @@
+import { Link } from "react-router-dom"
 import "../conocenos/conocenos.css"
 
 export default function Conocenos() {
     return (
         <>
             <body>
-            
+                <nav>
+                    <li >
+                        <Link to={"/"}>Inicio</Link>
+                        <Link to={"/conocenos"} class="activa">Quienes somos</Link>
+                        <Link to={"/productos"}>Productos</Link>
+                        <Link to={"/contacto"}>Contacto</Link>
+                    </li>
+                    <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                </nav>
                 <div className="caja1">
                     <h2>QUIENES SOMOS</h2>
                     <p className="parrafo">La carnicería Andrés Sierra opera con un personal con experiencia, esto
@@ -29,7 +38,9 @@ export default function Conocenos() {
 
                 </div>
             </body>
-            
+            <footer>
+                <h5>Copyrigth © 2023 Andres Sierra </h5>
+            </footer>
         </>
     )
 }
