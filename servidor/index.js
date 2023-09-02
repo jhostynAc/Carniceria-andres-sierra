@@ -14,14 +14,11 @@ const db = mysql.createConnection({
 })
 
 app.post("/create",(req,res)=>{
-    const Cedula = req.body.Nit_empresa
-    const Nombre = req.body.Nombre
-    const Apellidos = req.body.Apellidos
-    const Correo = req.body.Correo
-    const Contraseña =req.body.Contraseña
-    const Nit_proveedor = req.body.Nit_proveedor
+    const id_proveedor = req.body.id_proveedor
+    const Empresa = req.body.Empresa
+    const Telefono = req.body.Telefono
 
-    db.query('INSERT INTO admin(Cedula,Nombre,Apellidos,Correo,Contraseña,Nit_proveedor) VALUES(?,?,?,?,?,)',[Cedula,Nombre,Apellidos,Correo,Contraseña,Nit_proveedor],
+    db.query('INSERT INTO proveedor(id_proveedor,Empresa,Telefono) VALUES(?,?,?)',[id_proveedor,Empresa,Telefono],
     (err,result)=>{
         if(err){
             console.log("err");
@@ -33,7 +30,7 @@ app.post("/create",(req,res)=>{
 });
 
 app.get("/andres_sierra",(req,res)=>{
-    db.query('SELECT * FROM admin',
+    db.query('SELECT * FROM proveedor',
     (err,result)=>{
         if(err){
             console.log(err);
@@ -45,14 +42,11 @@ app.get("/andres_sierra",(req,res)=>{
 
 
 app.put("/update",(req,res)=>{
-    const Cedula = req.body.Nit_empresa
-    const Nombre = req.body.Nombre
-    const Apellidos = req.body.Apellidos
-    const Correo = req.body.Correo
-    const Contraseña =req.body.Contraseña
-    const Nit_proveedor = req.body.Nit_proveedor
+    const id_proveedor = req.body.id_proveedor
+    const Empresa = req.body.Empresa
+    const Telefono = req.body.Telefono
 
-    db.query('UPDATE admin SET Cedula=?,Nombre=?,Apellidos=?,Correo=?,Contraseña=?,Nit_proveedor WHERE id=?',[Cedula,Nombre,Apellidos,Correo,Contraseña,Nit_proveedor],
+    db.query('UPDATE proveedor SET id_proveedor=?,Empresa=?,Telefono=?,Correo=? WHERE id_proveedor=?',[id_proveedor,Empresa,Telefono],
     (err,result)=>{
         if(err){
             console.log("err");
@@ -66,7 +60,7 @@ app.put("/update",(req,res)=>{
 app.delete("/delete/:id",(req,res)=>{
     const id = req.params.id
     console.log(id)
-    db.query('DELETE FROM admin WHERE id = ?',[id],
+    db.query('DELETE FROM proveedor WHERE id = ?',[id],
     (err,result)=>{
         if(err){
             console.log(err)

@@ -5,25 +5,17 @@ import { useState } from "react";
 import Axios from "axios";
 
 export default function Proveedor() {
-    const [Cedula, setCedula] = useState("");
-    const [Nombre, setNombre] = useState("");
-    const [Apellidos, setApellidos] = useState("");
-    const [Correo, setCorreo] = useState("");
-    const [Contraseña, setContraseña] = useState("");
-    const [Nit_proveedor, setNit_proveedor] = useState("");
-    const [andres_sierraList, setAndressierra] = useState([]);
-
-    const [id, setId] = useState(0)
+    const [id_proveedor, setId_proveedor] = useState(0);
+    const [Empresa, setEmpresa] = useState("");
+    const [Telefono, setTelefono] = useState("");
+    const [andres_sierraList, setAndressierra] = useState([])
     const [editar, setEditar] = useState(false);
 
     const add = () => {
         Axios.post("http://localhost:3005/create", {
-            Cedula:Cedula,
-            Nombre:Nombre,
-            Apellidos:Apellidos,
-            Correo:Correo,
-            Contraseña:Contraseña,
-            Nit_proveedor:Nit_proveedor
+            id_proveedor: id_proveedor,
+            Empresa: Empresa,
+            Telefono: Telefono
         }).then(() => {
             alert('llega')
         });
@@ -36,39 +28,27 @@ export default function Proveedor() {
     getAndres_sierra();
     const editarAndres_sierra = (val) => {
         setEditar(true);
-        setId(val.id);
-       setCedula(val.Cedula)
-       setNombre(val.Nombre)
-       setApellidos(val.Apellidos)
-       setCorreo(val.Correo)
-       setContraseña(val.Contraseña)
-       setNit_proveedor(val.Nit_proveedor)
+        setId_proveedor(val.Cedula)
+        setEmpresa(val.Empresa)
+        setTelefono(val.Telefono)
     }
     const eliminar = (val) => {
         console.log(val)
-        Axios.delete(`http://localhost:3005/delete/${val.id}`, {
-            id: id
+        Axios.delete(`http://localhost:3005/delete/${val.id_proveedor}`, {
+            id_proveedor: id_proveedor
         }).then(() => {
             getAndres_sierra()
         })
     }
     const limpiar = () => {
-        setCedula('')
-        setNombre('')
-        setApellidos('')
-        setCorreo('')
-        setContraseña('')
-        setNit_proveedor('')
+        setId_proveedor('')
+        setEmpresa('')
+        setTelefono('')
     }
     const update = () => {
         Axios.put("http://localhost:3005/update", {
-            id: id,
-            Cedula:Cedula,
-            Nombre:Nombre,
-            Apellidos:Apellidos,
-            Correo:Correo,
-            Contraseña:Contraseña,
-            Nit_proveedor:Nit_proveedor
+            id_proveedor: id_proveedor,
+            Empresa: Empresa
         })
     }
     return (
@@ -91,28 +71,16 @@ export default function Proveedor() {
                         </div>
                         <div className="card-body">
                             <div className="input-group mb-3">
-                                <span className="input-group-text" id="basic-addon1">Cedula:</span>
-                                <input type="text" value={Cedula} onChange={(event) => { setCedula(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <span className="input-group-text" id="basic-addon1">id_proveedor:</span>
+                                <input type="text" value={id_proveedor} onChange={(event) => { setId_proveedor(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
-                                <span className="input-group-text" id="basic-addon1">Nombre:</span>
-                                <input type="text" value={Nombre} onChange={(event) => { setNombre(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <span className="input-group-text" id="basic-addon1">Empresa:</span>
+                                <input type="text" value={Empresa} onChange={(event) => { setEmpresa(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div class="input-group mb-3">
-                                <span className="input-group-text" id="basic-addon1">Apellidos:</span>
-                                <input type="text" value={Apellidos} onChange={(event) => { setApellidos(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
-                            </div>
-                            <div class="input-group mb-3">
-                                <span className="input-group-text" id="basic-addon1">Correo:</span>
-                                <input type="text" value={Correo} onChange={(event) => { setCorreo(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
-                            </div>
-                            <div class="input-group mb-3">
-                                <span className="input-group-text" id="basic-addon1">Contraseña:</span>
-                                <input type="text" value={Contraseña} onChange={(event) => { setContraseña(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
-                            </div>
-                            <div class="input-group mb-3">
-                                <span className="input-group-text" id="basic-addon1">Contraseña:</span>
-                                <input type="text" value={Nit_proveedor} onChange={(event) => { setNit_proveedor(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <span className="input-group-text" id="basic-addon1">Telefono:</span>
+                                <input type="text" value={Telefono} onChange={(event) => { setTelefono(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                         </div>
                         <div className="card-footer text-body-secondary">
@@ -137,14 +105,10 @@ export default function Proveedor() {
                             <tbody>
                                 {
                                     andres_sierraList.map((val, key) => {
-                                        return <tr key={val.id}>
-                                            <td>{val.id}</td>
-                                            <td>{val.Cedula}</td>
-                                            <td>{val.Nombre}</td>
-                                            <td>{val.Apellidos}</td>
-                                            <td>{val.Correo}</td>
-                                            <td>{val.Contraseña}</td>
-                                            <td>{val.Nit_proveedor}</td>
+                                        return <tr key={val.id_proveedor}>
+                                            <td>{val.id_proveedor}</td>
+                                            <td>{val.Empresa}</td>
+                                            <td>{val.Telefono}</td>
                                             <td>
                                                 <div className="btn-group" role="group" aria-label="Basic example">
                                                     <button type="button" onClick={() => { editarAndres_sierra(val) }} className="btn btn-warning">ediar</button>
