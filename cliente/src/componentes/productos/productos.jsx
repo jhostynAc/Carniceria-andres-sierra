@@ -23,7 +23,7 @@ export default function Productos() {
                             <p>Res</p>
                         </Link>
                         <a href="">
-                            <img width="80" height="80" src="https://img.icons8.com/dotty/80/cuts-of-pork.png" alt="cuts-of-pork" />
+                            <img width="80" height="80" src="https://img.icons8.com/dotty/80/000000/pig.png" alt="cuts-of-pork" />
                             <p>Cerdo</p>
                         </a>
                         <a href="">

@@ -29,23 +29,26 @@ export default function Principal() {
                 <div className="caja_inicio">
                     <h4 className="lineas">Catalogo</h4>
                     <div className="con">
-                    <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
-                        <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/cuts-of-pork.png"/>
-                        <Card.Body>
-                            <Link to={"productos"}><Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Cerdo</Button></Link>
-                        </Card.Body>
-                    </Card>
+                    
                     <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none' }}>
                         <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/cuts-of-beef.png" />
                         <Card.Body>
                             <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Res</Button>
                         </Card.Body>
-                    </Card> <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
+                    </Card> 
+                    <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
+                        <Card.Img variant="top" src="https://img.icons8.com/dotty/500/ffffff/pig.png"/>
+                        <Card.Body>
+                            <Link to={"productos"}><Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Cerdo</Button></Link>
+                        </Card.Body>
+                    </Card>
+                    <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
                         <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/chicken.png" />
                         <Card.Body>
                             <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Pollo</Button>
                         </Card.Body>
-                    </Card> <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
+                    </Card> 
+                    <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
                         <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/clown-fish.png" />
                         <Card.Body>
                             <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Pescado</Button>
@@ -91,7 +94,7 @@ export default function Principal() {
                 </div>
             </body > 
             <footer>
-                <h5>Copyrigth © 2023 Andres Sierra </h5>
+                <h5>Copyrigth © 2023 Andres Sierra </h5> <Link to={"proveedor"}><img src="https://img.icons8.com/ios-glyphs/20/FFFFFF/user--v1.png" alt="" /></Link>
             </footer>
         </>
     )

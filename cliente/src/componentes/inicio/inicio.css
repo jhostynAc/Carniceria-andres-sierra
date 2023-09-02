@@ -1,8 +1,9 @@
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 98.60vw;
+    width: 98.0vw;
 }
 
 nav {
@@ -149,7 +150,7 @@ nav img {
     height: 400px;
     display: flex;
     flex-direction: column;
-    align-items: start;
+
 }
 .tarjeta img{
     width: 100%;
@@ -171,21 +172,21 @@ nav img {
     height: 400px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: #161A1D;
-    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
 }
 .info{
-    width: 400px;
+    width: 200px;
     height: 400px;
     color: #ffffff;
 }
 .info li {
+    max-width: 100%;
     margin-top: 25px;
 }
 .info img{
-    margin-right: 25px;
+    margin-right: 10px;
 }
 .info h3{
     border-bottom: 2px solid white;
@@ -201,4 +202,8 @@ footer{
     color: #ffffff;
     background-color: #161A1D;
     border-top: 1px solid #B1A7A6;
+}
+footer img{
+    margin-top: -10px;
+    margin-left: 25px;
 }

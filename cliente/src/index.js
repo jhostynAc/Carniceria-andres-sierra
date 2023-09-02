@@ -7,8 +7,9 @@ import {BrowserRouter,Route,Routes} from "react-router-dom";
 import Principal from './componentes/inicio/Inicio';
 import Contacto from './componentes/contactenos/contacto';
 import Conocenos from './componentes/conocenos/conocenos';
-import Ventas from './componentes/ventas/ventas';
 import Productos from './componentes/productos/productos';
+import Ventas from './componentes/admin/ventas';
+import Proveedor from './componentes/admin/Proveedor';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,8 +19,9 @@ root.render(
     <Route path='principal' element={<Principal/>}></Route>
     <Route path='contacto' element={<Contacto/>}></Route>
     <Route path='conocenos' element={<Conocenos/>}></Route>
-    <Route path='ventas' element={<Ventas/>}></Route>
     <Route path='productos' element={<Productos/>}></Route>
+    <Route path='ventas' element={<Ventas/>}></Route>
+    <Route path='proveedor' element={<Proveedor/>}></Route>
   </Routes>
   </BrowserRouter>
 );

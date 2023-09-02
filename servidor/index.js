@@ -10,15 +10,18 @@ const db = mysql.createConnection({
     host:"localhost",
     user:"root",
     password:"",
-    database:"comprobante"
+    database:"andres_sierra"
 })
 
 app.post("/create",(req,res)=>{
-    const nombre = req.body.nombre
-    const cargo = req.body.cargo
-    const edad = req.body.edad
+    const Cedula = req.body.Nit_empresa
+    const Nombre = req.body.Nombre
+    const Apellidos = req.body.Apellidos
+    const Correo = req.body.Correo
+    const Contraseña =req.body.Contraseña
+    const Nit_proveedor = req.body.Nit_proveedor
 
-    db.query('INSERT INTO hola(nombre,cargo,edad) VALUES(?,?,?)',[nombre,cargo,edad],
+    db.query('INSERT INTO admin(Cedula,Nombre,Apellidos,Correo,Contraseña,Nit_proveedor) VALUES(?,?,?,?,?,)',[Cedula,Nombre,Apellidos,Correo,Contraseña,Nit_proveedor],
     (err,result)=>{
         if(err){
             console.log("err");
@@ -29,8 +32,8 @@ app.post("/create",(req,res)=>{
     );
 });
 
-app.get("/hola",(req,res)=>{
-    db.query('SELECT * FROM hola',
+app.get("/andres_sierra",(req,res)=>{
+    db.query('SELECT * FROM admin',
     (err,result)=>{
         if(err){
             console.log(err);
@@ -42,12 +45,14 @@ app.get("/hola",(req,res)=>{
 
 
 app.put("/update",(req,res)=>{
-    const id = req.body.id;
-    const nombre = req.body.nombre;
-    const cargo = req.body.cargo;   
-    const edad = req.body.edad;
+    const Cedula = req.body.Nit_empresa
+    const Nombre = req.body.Nombre
+    const Apellidos = req.body.Apellidos
+    const Correo = req.body.Correo
+    const Contraseña =req.body.Contraseña
+    const Nit_proveedor = req.body.Nit_proveedor
 
-    db.query('UPDATE hola SET nombre=?,cargo=?,edad=? WHERE id=?',[nombre,cargo,edad,id],
+    db.query('UPDATE admin SET Cedula=?,Nombre=?,Apellidos=?,Correo=?,Contraseña=?,Nit_proveedor WHERE id=?',[Cedula,Nombre,Apellidos,Correo,Contraseña,Nit_proveedor],
     (err,result)=>{
         if(err){
             console.log("err");
@@ -61,7 +66,7 @@ app.put("/update",(req,res)=>{
 app.delete("/delete/:id",(req,res)=>{
     const id = req.params.id
     console.log(id)
-    db.query('DELETE FROM hola WHERE id = ?',[id],
+    db.query('DELETE FROM admin WHERE id = ?',[id],
     (err,result)=>{
         if(err){
             console.log(err)
