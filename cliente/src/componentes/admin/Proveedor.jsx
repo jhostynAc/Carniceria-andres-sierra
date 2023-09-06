@@ -5,7 +5,7 @@ import { useState } from "react";
 import Axios from "axios";
 
 export default function Proveedor() {
-    const [id_proveedor, setId_proveedor] = useState(0);
+    const [id_proveedor, setId_proveedor] = useState("");
     const [Empresa, setEmpresa] = useState("");
     const [Telefono, setTelefono] = useState("");
     const [andres_sierraList, setAndressierra] = useState([])
@@ -17,7 +17,7 @@ export default function Proveedor() {
             Empresa: Empresa,
             Telefono: Telefono
         }).then(() => {
-            alert('llega')
+            console.log('llega')
         });
     }
     const getAndres_sierra = () => {
@@ -28,7 +28,7 @@ export default function Proveedor() {
     getAndres_sierra();
     const editarAndres_sierra = (val) => {
         setEditar(true);
-        setId_proveedor(val.Cedula)
+        setId_proveedor(val.id_proveedor)
         setEmpresa(val.Empresa)
         setTelefono(val.Telefono)
     }
@@ -48,7 +48,8 @@ export default function Proveedor() {
     const update = () => {
         Axios.put("http://localhost:3005/update", {
             id_proveedor: id_proveedor,
-            Empresa: Empresa
+            Empresa: Empresa,
+            Telefono:Telefono
         })
     }
     return (

@@ -46,10 +46,10 @@ app.put("/update",(req,res)=>{
     const Empresa = req.body.Empresa
     const Telefono = req.body.Telefono
 
-    db.query('UPDATE proveedor SET id_proveedor=?,Empresa=?,Telefono=?,Correo=? WHERE id_proveedor=?',[id_proveedor,Empresa,Telefono],
+    db.query('UPDATE proveedor SET id_proveedor=?,Empresa=?,Telefono=?' ,[id_proveedor,Empresa,Telefono],
     (err,result)=>{
         if(err){
-            console.log("err");
+            console.log(err);
         }else{
             res.send("actualizacio echo")
         }
@@ -57,10 +57,10 @@ app.put("/update",(req,res)=>{
     );
 });
 
-app.delete("/delete/:id",(req,res)=>{
-    const id = req.params.id
-    console.log(id)
-    db.query('DELETE FROM proveedor WHERE id = ?',[id],
+app.delete("/delete/:id_proveedor",(req,res)=>{
+    const id_proveedor = req.params.id_proveedor
+    console.log('se fue ')
+    db.query('DELETE FROM proveedor WHERE id_proveedor  = ?',[id_proveedor],
     (err,result)=>{
         if(err){
             console.log(err)
