@@ -29,19 +29,18 @@ export default function Principal() {
                 <div className="caja_inicio">
                     <h4 className="lineas">Catalogo</h4>
                     <div className="con">
-                    
-                    <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none' }}>
-                        <Card.Img variant="top" src="https://res.cloudinary.com/dmdjczyt2/image/upload/v1693878561/icons8-cuts-of-beef-80_2_bs1qrt.png " />
-                        <Card.Body>
-                            <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Res</Button>
-                        </Card.Body>
-                    </Card> 
                     <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
                         <Card.Img variant="top" src="https://img.icons8.com/dotty/500/ffffff/pig.png"/>
                         <Card.Body>
-                            <Link to={"productos"}><Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Cerdo</Button></Link>
+                            <Link to="/productos#cerdo"><Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Cerdo</Button></Link>
                         </Card.Body>
                     </Card>
+                    <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none' }}>
+                        <Card.Img variant="top" src="https://res.cloudinary.com/dmdjczyt2/image/upload/v1693878561/icons8-cuts-of-beef-80_2_bs1qrt.png " />
+                        <Card.Body>
+                            <Link to="/productos#res"><Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Res</Button></Link>
+                        </Card.Body>
+                    </Card> 
                     <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
                         <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/chicken.png" />
                         <Card.Body>
