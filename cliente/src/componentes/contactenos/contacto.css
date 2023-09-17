@@ -5,7 +5,7 @@ body {
     width: 98.60vw;
 }
 
-.cuadro-exotic1_contacto{
+.cuadro-exotic1_contacto1{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,12 +14,12 @@ body {
     height: 400px;
     gap: 45px;
 }
-.cuadro-exotic1_contacto h1{
+.cuadro-exotic1_contacto1 h1{
     font-size: 40px;
     color: #B1A7A6;
     margin-top: 400px;
 }
-.cuadro-exotic1_contacto p{
+.cuadro-exotic1_contacto1 p{
     font-size: 30px;
 }
 .cuadro_2{
@@ -28,6 +28,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 45px;
+    margin-top: 350px;
 }
 .cuadro_2  input{
     width: 400px;

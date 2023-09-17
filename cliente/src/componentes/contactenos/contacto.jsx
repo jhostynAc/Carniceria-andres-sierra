@@ -13,7 +13,7 @@ export default function Contacto() {
                 </li>
                 <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
             </nav>
-            <div class="cuadro-exotic1_contacto">
+            <div class="cuadro-exotic1_contacto1">
                 <h1>Contactos</h1>
                 <p>Aca podras encontrar nuestras formas de contacto para alguna inquietud,queja o reclamo</p>
                 <div class="cuadro_2">

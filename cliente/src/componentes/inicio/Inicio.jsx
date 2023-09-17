@@ -59,9 +59,9 @@ export default function Principal() {
                     <h4 className="lineas">servicio</h4>
                     <div className="conte">
                         <div className="tarjeta">
-                            <h3>domicilio</h3>
-                            <img src="https://camponoble.co/wp-content/uploads/2020/05/icono-domicilios-2.png" alt="" />
-                            <p>oe la buena compra bien melo </p>
+                            <h3>Encuesta</h3>
+                            <img src="" alt="" />
+                            <Link to={"/formulario"}>Realizar encuesta</Link>
                         </div>
                         <div className="tarjeta">
                             <h3>domicilio</h3>
