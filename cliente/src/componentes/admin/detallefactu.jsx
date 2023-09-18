@@ -59,14 +59,16 @@ export default function Detallefactu() {
     return (
         <body>
             <nav>
+                <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
                 <li >
                     <Link to={"/proveedor"}>Proveedor</Link>
                     <Link to={"/producto"} >Producto</Link>
                     <Link to={"/cliente"}>cliente</Link>
                     <Link to={"/factura"} >factura</Link>
                     <Link to={"/detallefactu"} class="activa">Detalle factura</Link>
+                    <Link to={"/"}><img src="https://img.icons8.com/material-rounded/24/ffffff/exit.png" alt="" /></Link>
                 </li>
-                <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                
             </nav>
             <div className="cont">
                 <div class="container">
