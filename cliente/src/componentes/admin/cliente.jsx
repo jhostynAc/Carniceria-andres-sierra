@@ -17,8 +17,8 @@ export default function Cliente() {
         Axios.post("http://localhost:3005/creates", {
             Nombre: Nombre,
             Direccion: Direccion,
-            Telefono:Telefono,
-            CorreoElectronico:CorreoElectronico
+            Telefono: Telefono,
+            CorreoElectronico: CorreoElectronico
         }).then(() => {
             console.log('llega')
         });
@@ -57,8 +57,8 @@ export default function Cliente() {
             ID_Cliente: ID_Cliente,
             Nombre: Nombre,
             Direccion: Direccion,
-            Telefono:Telefono,
-            CorreoElectronico:CorreoElectronico
+            Telefono: Telefono,
+            CorreoElectronico: CorreoElectronico
         })
     }
     return (
@@ -71,9 +71,9 @@ export default function Cliente() {
                     <Link to={"/cliente"} class="activa">Cliente</Link>
                     <Link to={"/factura"}>factura</Link>
                     <Link to={"/detallefactu"}>Detalle factura</Link>
-                    <Link to={"/"}><img src="https://img.icons8.com/material-rounded/24/ffffff/exit.png" alt="" /></Link>
                 </li>
-                
+                <Link to={"/"}><img src="https://img.icons8.com/puffy/100/ffffff/experimental-home-puffy.png" alt="" className="home" /></Link>
+
             </nav>
             <div className="cont">
                 <div class="container">

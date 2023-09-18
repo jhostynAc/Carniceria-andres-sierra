@@ -66,7 +66,7 @@ export default function Detallefactu() {
                     <Link to={"/cliente"}>cliente</Link>
                     <Link to={"/factura"} >factura</Link>
                     <Link to={"/detallefactu"} class="activa">Detalle factura</Link>
-                    <Link to={"/"}><img src="https://img.icons8.com/material-rounded/24/ffffff/exit.png" alt="" /></Link>
+                    <Link to={"/"}><img src="https://img.icons8.com/puffy/100/ffffff/experimental-home-puffy.png" alt="" className="home" /></Link>
                 </li>
                 
             </nav>

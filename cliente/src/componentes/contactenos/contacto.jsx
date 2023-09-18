@@ -5,13 +5,14 @@ export default function Contacto() {
     return (
         <body>
             <nav>
+                <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
                 <li >
                     <Link to={"/"} >Inicio</Link>
                     <Link to={"/conocenos"}>Quienes somos</Link>
                     <Link to={"/productos"}>Productos</Link>
                     <Link to={"/contacto"} class="activa">Contacto</Link>
                 </li>
-                <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                
             </nav>
             <div class="cuadro-exotic1_contacto1">
                 <h1>Contactos</h1>

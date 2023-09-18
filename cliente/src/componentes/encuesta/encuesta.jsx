@@ -5,10 +5,11 @@ export default function MiFormulario() {
     return (
         <body>
             <nav>
+                <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
                 <li >
                     <Link to={"/"} >Inicio</Link>
                 </li>
-                <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+
             </nav>
             <div class="cuadro-exotic1_contacto">
                 <div class="cuadro_2">

@@ -62,7 +62,7 @@ export default function Proveedor() {
                     <Link to={"/cliente"}>Cliente</Link>
                     <Link to={"/factura"}>factura</Link>
                     <Link to={"/detallefactu"}>Detalle factura</Link>
-                    <Link to={"/"}><img src="https://img.icons8.com/material-rounded/24/ffffff/exit.png" alt="" /></Link>
+                    <Link to={"/"}><img src="https://img.icons8.com/puffy/100/ffffff/experimental-home-puffy.png" alt="" className="home"/></Link>
                 </li>
                 
             </nav>

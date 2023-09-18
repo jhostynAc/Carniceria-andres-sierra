@@ -9,13 +9,14 @@ export default function Principal() {
             <body>
                 <div className="caja">
                     <nav>
+                    <Link to={"proveedor"}><img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" /></Link>
                         <li >
                             <Link to={"/"} class="activa">Inicio</Link>
                             <Link to={"/conocenos"}>Quienes somos</Link>
                             <Link to={"/productos"}>Productos</Link>
                             <Link to={"/contacto"}>Contacto</Link>
                         </li>
-                        <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                        
                     </nav>
                     <div className="inform">
                         <h1>Calidad y corte</h1>
@@ -36,7 +37,7 @@ export default function Principal() {
                         </Card.Body>
                     </Card>
                     <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none' }}>
-                        <Card.Img variant="top" src="https://res.cloudinary.com/dmdjczyt2/image/upload/v1693878561/icons8-cuts-of-beef-80_2_bs1qrt.png " />
+                        <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/cuts-of-beef.png" />
                         <Card.Body>
                             <Link to="/productos#res"><Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Res</Button></Link>
                         </Card.Body>
@@ -60,13 +61,13 @@ export default function Principal() {
                     <div className="conte">
                         <div className="tarjeta">
                             <h3>Encuesta</h3>
-                            <img src="" alt="" />
+                            <img src="https://img.icons8.com/glyph-neue/500/FFFFFF/survey--v1.png" alt="" />
                             <Link to={"/formulario"}>Realizar encuesta</Link>
                         </div>
                         <div className="tarjeta">
-                            <h3>domicilio</h3>
-                            <img src="https://camponoble.co/wp-content/uploads/2020/05/icono-domicilios-2.png" alt="" />
-                            <p>oe la buena compra bien melo </p>
+                            <h3>Domicilio</h3>
+                            <img src="https://img.icons8.com/ios-glyphs/500/FFFFFF/scooter.png" alt="" />
+                            <p>Realizar pedido </p>
                         </div>
                     </div>
                 </div>
@@ -93,7 +94,7 @@ export default function Principal() {
                 </div>
             </body > 
             <footer>
-                <h5>Copyrigth © 2023 Andres Sierra </h5> <Link to={"proveedor"}><img src="https://img.icons8.com/ios-glyphs/20/FFFFFF/user--v1.png" alt="" /></Link>
+                <h5>Copyrigth © 2023 Andres Sierra </h5> 
             </footer>
         </>
     )
