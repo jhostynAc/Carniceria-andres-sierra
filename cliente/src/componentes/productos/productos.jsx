@@ -5,9 +5,9 @@ import Axios from "axios";
 
 export default function Productos() {
 
-	const [producto,setProducto] = useState([])
+	const [producto, setProducto] = useState([])
 
-	const getproducto = ()=>{
+	const getproducto = () => {
 		Axios.get('http://localhost:3005/Producto',).then((response) => {
 			setProducto(response.data);
 		})
@@ -112,18 +112,20 @@ export default function Productos() {
 								<p>Cerdo</p>
 							</a></li></div>
 					<div class="item">
-						{producto.map((val,key) =>{
-							return <div key={val.ID_Producto}>
-								<figure>
-									<img  src={val.Imagen} alt="producto"/>
-								</figure>
-								<div class="info-product">
-									<h2>{val.Nombre}</h2>
-									<p class="price">$ {val.Precio}</p>
-									<button class="btn-add-cart">Añadir al carrito</button>
+						{producto
+							.filter(val => val.Tipo === 'cerdo')
+							.map((val, key) => {
+								return <div key={val.Tipo}>
+									<figure>
+										<img src={val.Imagen} alt="producto" />
+									</figure>
+									<div class="info-product">
+										<h2>{val.Nombre}</h2>
+										<p class="price">$ {val.Precio}</p>
+										<button class="btn-add-cart">Añadir al carrito</button>
+									</div>
 								</div>
-							</div>
-						})}
+							})}
 					</div>
 					<div class="item_seleccion" id='res'>
 						<li><a href="#">
@@ -132,186 +134,20 @@ export default function Productos() {
 						</a></li>
 					</div>
 					<div class="item">
-						<figure>
-							<img
-								src="https://mercalan.com.co/wp-content/uploads/2022/08/tabla.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Tabla</h2>
-							<p class="price">$16.800</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://i0.wp.com/mercalo.co/wp-content/uploads/2022/05/ext.jpg?fit=554%2C603&ssl=1"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>El Extranjero</h2>
-							<p class="price">$16800</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://imarkt.co/wp-content/uploads/2020/07/Paletero-Biefe-de-Paleta-a-Domicilio.png"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Paletero</h2>
-							<p class="price">$14500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://www.eurosupermercados.com.co/media/catalog/product/cache/5db2c2cd17d64c361c13f6f6460f1cf1/7/0/70579.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Cáscara</h2>
-							<p class="price">$14000</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://imarkt.co/wp-content/uploads/2020/07/Morrillo-de-Res.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Morrillo</h2>
-							<p class="price">$13500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://mercavil.com/38797-medium_default/solomito-de-res-libra.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Zavaleta</h2>
-							<p class="price">$14800</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://olimpica.vtexassets.com/arquivos/ids/739440/24038379.jpg?v=637784103587330000"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Asadura</h2>
-							<p class="price">$2500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://sumerlabs.com/sumer-app-90b8f.appspot.com/product_photos%2Fb59db14234615dced3219b7df34a91b5%2F1d455190-d7b4-11ec-8364-47b24100120e?alt=media&token=29c2cb30-f175-4903-9a77-4bef05839203"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Tápa De Costilla</h2>
-							<p class="price">$12600</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/203413/2400365000000-1.jpg?v=637814194449400000"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Punta De Anca</h2>
-							<p class="price">$25500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://alianza-zapatoca.s3.amazonaws.com/prod/images/products/optimized/212110-01__1000.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Solomito</h2>
-							<p class="price">$27500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://cdn2.cocinadelirante.com/sites/default/files/images/2021/08/conservar-higado-de-res-piotrmalczyk.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Hígado De Res</h2>
-							<p class="price">$10800</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/203442/2406850000005-1.jpg?v=637814194529330000"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Pecho</h2>
-							<p class="price">$13800</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://i0.wp.com/mercalo.co/wp-content/uploads/2022/05/000002C.jpg?fit=554%2C603&ssl=1"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Solomo Redondo</h2>
-							<p class="price">$22500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://mercaldas.vtexassets.com/arquivos/ids/193039/Falda-x-0-5-kg_14847.jpg?v=637287105400530000"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Falda</h2>
-							<p class="price">$21000</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
+						{producto
+							.filter(val => val.Tipo === 'res')
+							.map((val, key) => {
+								return <div key={val.Tipo}>
+									<figure>
+										<img src={val.Imagen} alt="producto" />
+									</figure>
+									<div class="info-product">
+										<h2>{val.Nombre}</h2>
+										<p class="price">$ {val.Precio}</p>
+										<button class="btn-add-cart">Añadir al carrito</button>
+									</div>
+								</div>
+							})}
 					</div>
 					<div class="item_seleccion" id='pollo'>
 						<li><a href="#">
@@ -320,108 +156,20 @@ export default function Productos() {
 						</a></li>
 					</div>
 					<div class="item">
-						<figure>
-							<img
-								src="https://alimentoscorona.com/wp-content/uploads/2020/05/menudencia-fina-600x600.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Bandeja De menudencias</h2>
-							<p class="price">$5500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://d1cft8rz0k7w99.cloudfront.net/n/3/7/a/b/37abc8c3c46159f6f9199ecac16d2b1d2f03403f_Poultry_174293_01.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Filete De Pechuga</h2>
-							<p class="price">$14000</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://d1cft8rz0k7w99.cloudfront.net/n/3/7/a/b/37abc8c3c46159f6f9199ecac16d2b1d2f03403f_Poultry_174293_01.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Bolsa De Muslos</h2>
-							<p class="price">$5800</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://imarkt.co/wp-content/uploads/2020/07/Pechuga-de-Pollo-1-unidad.png"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Pechuga</h2>
-							<p class="price">$7800</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://imarkt.co/wp-content/uploads/2020/07/Pierna-Pernil-de-Pollo-X-2-unidades.png"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Pernil</h2>
-							<p class="price">$5200</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://imarkt.co/wp-content/uploads/2021/02/Pollo-Entero-Unidad-iMarkt.co_.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Pollo Entero</h2>
-							<p class="price">$24500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://mistiendas.com.co/18279-large_default/patas-y-cabezas-de-pollo-promocion-pollocoa-pr-mt.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Patas Y Cabezas De Pollo</h2>
-							<p class="price">$5000</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://www.despensa.es/documents/10180/10736/974060_G.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Contramuslo De Pollo</h2>
-							<p class="price">$14000</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
+						{producto
+							.filter(val => val.Tipo === 'pollo')
+							.map((val, key) => {
+								return <div key={val.Tipo}>
+									<figure>
+										<img src={val.Imagen} alt="producto" />
+									</figure>
+									<div class="info-product">
+										<h2>{val.Nombre}</h2>
+										<p class="price">$ {val.Precio}</p>
+										<button class="btn-add-cart">Añadir al carrito</button>
+									</div>
+								</div>
+							})}
 					</div>
 					<div class="item_seleccion" id='pescado'>
 						<li><a href="#">
@@ -430,121 +178,20 @@ export default function Productos() {
 						</a></li>
 					</div>
 					<div class="item">
-						<figure>
-							<img
-								src="https://supermercadolaestacion.com/35529-thickbox_default/bagre-hueso-carnudo-almin-bandeja.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Bandeja De Hueso De Bagre</h2>
-							<p class="price">$9800</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://www.superlosmontes.com/site/14391-large_default/trucha-ancla-y-viento-filet-ahumada-250gr.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Trucha</h2>
-							<p class="price">$13500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://angelicasmarket.com/wp-content/uploads/2023/04/Pescado-crudo-Tilapia-Rojo-1kg-aprox.png"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Tilapia</h2>
-							<p class="price">$9500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://laconstanciacarniceria.com/wp-content/uploads/2021/02/SALMON-NAT123.png"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Salmón</h2>
-							<p class="price">$35000</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://imarkt.co/wp-content/uploads/2020/08/filete-de-bassa.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Filete De Basa</h2>
-							<p class="price">$21000</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWlHIsYexH_SNyujouKc52rze9bDZweLp2VJc2R3KHMrNm3i3DysTQO1qGdimGns4Wsi0&usqp=CAU"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Filete De Trucha</h2>
-							<p class="price">$28000</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://lacolonia.vtexassets.com/arquivos/ids/169975-800-800?v=637093562429000000&width=800&height=800&aspect=true"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Bandeja De Camarones</h2>
-							<p class="price">$19800</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://distribuidorafp.com.co/wp-content/uploads/2020/11/Cazuela-de-Mariscos-Apromar-x-500-gr.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Cazuela De Mariscos</h2>
-							<p class="price">$11500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://www.delfinultracongelados.es/wp-content/uploads/2019/08/filetes-de-merluza-del-cabo-crudos-con-piel-imagen.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Filete De Merluza</h2>
-							<p class="price">$14500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
+						{producto
+							.filter(val => val.Tipo === 'pescado')
+							.map((val, key) => {
+								return <div key={val.Tipo}>
+									<figure>
+										<img src={val.Imagen} alt="producto" />
+									</figure>
+									<div class="info-product">
+										<h2>{val.Nombre}</h2>
+										<p class="price">$ {val.Precio}</p>
+										<button class="btn-add-cart">Añadir al carrito</button>
+									</div>
+								</div>
+							})}
 					</div>
 				</div>
 			</body>
