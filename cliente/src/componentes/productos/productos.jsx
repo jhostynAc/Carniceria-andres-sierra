@@ -1,7 +1,18 @@
+import { useState } from 'react'
 import './productos.css'
 import { Link } from "react-router-dom"
+import Axios from "axios";
 
 export default function Productos() {
+
+	const [producto,setProducto] = useState([])
+
+	const getproducto = ()=>{
+		Axios.get('http://localhost:3005/Producto',).then((response) => {
+			setProducto(response.data);
+		})
+	}
+	getproducto()
 	return (
 		<>
 			<body>
@@ -101,110 +112,19 @@ export default function Productos() {
 								<p>Cerdo</p>
 							</a></li></div>
 					<div class="item">
-						<figure>
-							<img
-								src="https://laestacioncarnica.com/cdn/shop/products/la-estacion-carnica-pezuna-de-cerdo_1024x1024.jpg?v=1621914486"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Pezuña</h2>
-							<p class="price">$4600</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
+						{producto.map((val,key) =>{
+							return <div key={val.ID_Producto}>
+								<figure>
+									<img  src={val.Imagen} alt="producto"/>
+								</figure>
+								<div class="info-product">
+									<h2>{val.Nombre}</h2>
+									<p class="price">$ {val.Precio}</p>
+									<button class="btn-add-cart">Añadir al carrito</button>
+								</div>
+							</div>
+						})}
 					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://tacisa.com/wp-content/uploads/2016/09/higado-de-cerdo-00007.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Hígado De Cerdo</h2>
-							<p class="price">$8300</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://cdn1.totalcommerce.cloud/mercacentro/product-zoom/es/oreja-de-cerdo-kilo-1000-g-1.webp"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Oreja</h2>
-							<p class="price">$3200</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://cdnx.jumpseller.com/conocimiento/image/19283040/resize/640/640?1651796102"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Cadeza De Cañon</h2>
-							<p class="price">$9800</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://www.gastronomiavasca.net/uploads/image/file/3932/lomo_de_cerdo.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Cañon</h2>
-							<p class="price">$11700</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://olimpica.vtexassets.com/arquivos/ids/715372/24010610.jpg?v=637756087148700000"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Tocino</h2>
-							<p class="price">$11500</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://s.cornershopapp.com/product-images/1356705.jpg?versionId=KvdMlPlGcOHiOCi1kyUNpxKNSnx1BArI"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Osobuco</h2>
-							<p class="price">$5800</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-					<div class="item">
-						<figure>
-							<img
-								src="https://www.cervalle.com/wp-content/uploads/2020/11/espinazo-1.jpg"
-								alt="producto"
-							/>
-						</figure>
-						<div class="info-product">
-							<h2>Espinazo</h2>
-							<p class="price">$5800</p>
-							<button class="btn-add-cart">Añadir al carrito</button>
-						</div>
-					</div>
-
 					<div class="item_seleccion" id='res'>
 						<li><a href="#">
 							<img width="80" height="80" src="https://img.icons8.com/dotty/80/cuts-of-beef.png" alt="cuts-of-beef" />

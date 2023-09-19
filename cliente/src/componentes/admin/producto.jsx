@@ -6,6 +6,7 @@ import Axios from "axios";
 
 export default function Producto() {
     const [ID_Producto, setID_producto] = useState("");
+    const [Imagen, setImagen] = useState("")
     const [Nombre, setNombre] = useState("");
     const [Precio, setPrecio] = useState("");
     const [Tipo, setTipo] = useState("");
@@ -16,10 +17,11 @@ export default function Producto() {
     const add = () => {
         Axios.post("http://localhost:3005/crear", {
             ID_Producto: ID_Producto,
+            Imagen: Imagen,
             Nombre: Nombre,
             Precio: Precio,
-            Tipo:Tipo,
-            ID_proveedor:ID_proveedor
+            Tipo: Tipo,
+            ID_proveedor: ID_proveedor
         }).then(() => {
             console.log('llega')
         });
@@ -34,6 +36,7 @@ export default function Producto() {
     const editarAndres_sierra = (val) => {
         setEditar(true);
         setID_producto(val.ID_Producto)
+        setImagen(val.Imagen)
         setNombre(val.Nombre)
         setPrecio(val.Precio)
         setTipo(val.Tipo)
@@ -49,6 +52,7 @@ export default function Producto() {
     }
     const limpiar = () => {
         setID_producto('')
+        setImagen('')
         setNombre('')
         setPrecio('')
         setTipo('')
@@ -57,10 +61,11 @@ export default function Producto() {
     const update = () => {
         Axios.put("http://localhost:3005/actualizar", {
             ID_Producto: ID_Producto,
+            Imagen: Imagen,
             Nombre: Nombre,
             Precio: Precio,
-            Tipo:Tipo,
-            ID_proveedor:ID_proveedor
+            Tipo: Tipo,
+            ID_proveedor: ID_proveedor
         })
     }
     return (
@@ -75,7 +80,7 @@ export default function Producto() {
                     <Link to={"/detallefactu"}>Detalle factura</Link>
                     <Link to={"/"}><img src="https://img.icons8.com/puffy/100/ffffff/experimental-home-puffy.png" alt="" className="home" /></Link>
                 </li>
-                
+
             </nav>
             <div className="cont">
                 <div class="container">
@@ -87,6 +92,10 @@ export default function Producto() {
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">ID producto:</span>
                                 <input type="text" value={ID_Producto} onChange={(event) => { setID_producto(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                            </div>
+                            <div className="input-group mb-3">
+                                <span className="input-group-text" id="basic-addon1">URL:</span>
+                                <input type="text" value={Imagen} onChange={(event) => { setImagen(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Nombre:</span>
@@ -119,6 +128,7 @@ export default function Producto() {
                             <thead>
                                 <tr>
                                     <th scope="col">ID producto</th>
+                                    <th scope="col">Imagen</th>
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Precio</th>
                                     <th scope="col">Tipo</th>
@@ -130,6 +140,7 @@ export default function Producto() {
                                     andres_sierraList.map((val, key) => {
                                         return <tr key={val.ID_Producto}>
                                             <td>{val.ID_Producto}</td>
+                                            <td>{val.Imagen}</td>
                                             <td>{val.Nombre}</td>
                                             <td>{val.Precio}</td>
                                             <td>{val.Tipo}</td>

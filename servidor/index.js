@@ -76,12 +76,13 @@ app.listen(3005,()=>{
 
 app.post("/crear",(req,res)=>{
     const ID_Producto = req.body.ID_Producto
+    const Imagen = req.body.Imagen
     const Nombre = req.body.Nombre
     const Precio = req.body.Precio
     const Tipo = req.body.Tipo
     const ID_proveedor = req.body.ID_proveedor
 
-    db.query('INSERT INTO Producto(ID_Producto,Nombre,Precio,Tipo,ID_proveedor) VALUES(?,?,?,?,?)',[ID_Producto,Nombre,Precio,Tipo,ID_proveedor],
+    db.query('INSERT INTO Producto(ID_Producto,Nombre,Precio,Tipo,ID_proveedor,Imagen) VALUES(?,?,?,?,?,?)',[ID_Producto,Nombre,Precio,Tipo,ID_proveedor,Imagen],
     (err,result)=>{
         if(err){
             console.log("err");
@@ -106,12 +107,13 @@ app.get("/Producto",(req,res)=>{
 
 app.put("/actualizar",(req,res)=>{
     const ID_Producto = req.body.ID_Producto
+    const Imagen = req.body.Imagen
     const Nombre = req.body.Nombre
     const Precio = req.body.Precio
     const Tipo = req.body.Tipo
     const ID_proveedor = req.body.ID_proveedor
 
-    db.query('UPDATE Producto SET ID_Producto=?,Nombre=?,Precio=?,Tipo=?,ID_proveedor=?' ,[ID_Producto,Nombre,Precio,Tipo,ID_proveedor],
+    db.query('UPDATE Producto SET ID_Producto=?,Nombre=?,Precio=?,Tipo=?,ID_proveedor=?,Imagen=?' ,[ID_Producto,Nombre,Precio,Tipo,ID_proveedor,Imagen],
     (err,result)=>{
         if(err){
             console.log(err);
