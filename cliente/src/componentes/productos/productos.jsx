@@ -104,94 +104,96 @@ export default function Productos() {
 							</div>
 						</div></div>
 				</header>
-				<div class="container-items">
-					<div class="item_seleccion" id='cerdo'>
-						<li>
-							<a href="#">
-								<img width="80" height="80" src="https://img.icons8.com/dotty/80/cuts-of-pork.png" alt="cuts-of-pork" />
-								<p>Cerdo</p>
-							</a></li></div>
-					<div class="item">
-						{producto
-							.filter(val => val.Tipo === 'cerdo')
-							.map((val, key) => {
-								return <div key={val.Tipo}>
-									<figure>
-										<img src={val.Imagen} alt="producto" />
-									</figure>
-									<div class="info-product">
-										<h2>{val.Nombre}</h2>
-										<p class="price">$ {val.Precio}</p>
-										<button class="btn-add-cart">Añadir al carrito</button>
+				<div>
+
+					<div className='separador_productos' id='cerdo'>
+					<img src="https://img.icons8.com/dotty/100/pig.png" alt="Cerdo" />
+						<hr />
+					</div>
+					<div class="container-items">
+						<div class="item">
+							{producto
+								.filter(val => val.Tipo === 'cerdo')
+								.map((val, key) => {
+									return <div key={val.Tipo}>
+										<figure>
+											<img src={val.Imagen} alt="producto" />
+										</figure>
+										<div class="info-product">
+											<h2>{val.Nombre}</h2>
+											<p class="price">$ {val.Precio}</p>
+											<button class="btn-add-cart">Añadir al carrito</button>
+										</div>
 									</div>
-								</div>
-							})}
+								})}
+						</div>
 					</div>
-					<div class="item_seleccion" id='res'>
-						<li><a href="#">
-							<img width="80" height="80" src="https://img.icons8.com/dotty/80/cuts-of-beef.png" alt="cuts-of-beef" />
-							<p>Res</p>
-						</a></li>
+					<div className='separador_productos' id='res'>
+						<img src="https://img.icons8.com/dotty/100/cuts-of-beef.png" alt="" />
+						<hr />
 					</div>
-					<div class="item">
-						{producto
-							.filter(val => val.Tipo === 'res')
-							.map((val, key) => {
-								return <div key={val.Tipo}>
-									<figure>
-										<img src={val.Imagen} alt="producto" />
-									</figure>
-									<div class="info-product">
-										<h2>{val.Nombre}</h2>
-										<p class="price">$ {val.Precio}</p>
-										<button class="btn-add-cart">Añadir al carrito</button>
+					<div class="container-items">
+						<div class="item">
+							{producto
+								.filter(val => val.Tipo === 'res')
+								.map((val, key) => {
+									return <div key={val.Tipo}>
+										<figure>
+											<img src={val.Imagen} alt="producto" />
+										</figure>
+										<div class="info-product">
+											<h2>{val.Nombre}</h2>
+											<p class="price">$ {val.Precio}</p>
+											<button class="btn-add-cart">Añadir al carrito</button>
+										</div>
 									</div>
-								</div>
-							})}
+								})}
+						</div>
 					</div>
-					<div class="item_seleccion" id='pollo'>
-						<li><a href="#">
-							<img src="https://img.icons8.com/dotty/80/chicken.png" alt="chicken" />
-							<p>Pollo</p>
-						</a></li>
+
+					<div className='separador_productos' id='pollo'>
+						<img src="https://img.icons8.com/dotty/100/chicken.png" alt="" />
+						<hr />
 					</div>
-					<div class="item">
-						{producto
-							.filter(val => val.Tipo === 'pollo')
-							.map((val, key) => {
-								return <div key={val.Tipo}>
-									<figure>
-										<img src={val.Imagen} alt="producto" />
-									</figure>
-									<div class="info-product">
-										<h2>{val.Nombre}</h2>
-										<p class="price">$ {val.Precio}</p>
-										<button class="btn-add-cart">Añadir al carrito</button>
+					<div class="container-items">
+						<div class="item">
+							{producto
+								.filter(val => val.Tipo === 'pollo')
+								.map((val, key) => {
+									return <div key={val.Tipo}>
+										<figure>
+											<img src={val.Imagen} alt="producto" />
+										</figure>
+										<div class="info-product">
+											<h2>{val.Nombre}</h2>
+											<p class="price">$ {val.Precio}</p>
+											<button class="btn-add-cart">Añadir al carrito</button>
+										</div>
 									</div>
-								</div>
-							})}
+								})}
+						</div>
 					</div>
-					<div class="item_seleccion" id='pescado'>
-						<li><a href="#">
-							<img src="https://img.icons8.com/dotty/80/killed-fish.png" alt="killed-fish" />
-							<p>Pescado</p>
-						</a></li>
+					<div className='separador_productos' id='pescado'>
+						<img src="https://img.icons8.com/dotty/100/clown-fish.png" alt="" />
+						<hr />
 					</div>
-					<div class="item">
-						{producto
-							.filter(val => val.Tipo === 'pescado')
-							.map((val, key) => {
-								return <div key={val.Tipo}>
-									<figure>
-										<img src={val.Imagen} alt="producto" />
-									</figure>
-									<div class="info-product">
-										<h2>{val.Nombre}</h2>
-										<p class="price">$ {val.Precio}</p>
-										<button class="btn-add-cart">Añadir al carrito</button>
+					<div class="container-items">
+						<div class="item">
+							{producto
+								.filter(val => val.Tipo === 'pescado')
+								.map((val, key) => {
+									return <div key={val.Tipo}>
+										<figure>
+											<img src={val.Imagen} alt="producto" />
+										</figure>
+										<div class="info-product">
+											<h2>{val.Nombre}</h2>
+											<p class="price">$ {val.Precio}</p>
+											<button class="btn-add-cart">Añadir al carrito</button>
+										</div>
 									</div>
-								</div>
-							})}
+								})}
+						</div>
 					</div>
 				</div>
 			</body>
