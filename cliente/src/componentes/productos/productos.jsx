@@ -115,7 +115,7 @@ export default function Productos() {
 							{producto
 								.filter(val => val.Tipo === 'cerdo')
 								.map((val, key) => {
-									return <div key={val.Tipo}>
+									return <div key={val.ID_Producto}>
 										<figure>
 											<img src={val.Imagen} alt="producto" />
 										</figure>
@@ -123,7 +123,7 @@ export default function Productos() {
 											<h2>{val.Nombre}</h2>
 											<p class="price">$ {val.Precio}</p>
 											<button class="btn-add-cart">Añadir al carrito</button>
-										</div>
+										</div>									
 									</div>
 								})}
 						</div>
@@ -137,7 +137,7 @@ export default function Productos() {
 							{producto
 								.filter(val => val.Tipo === 'res')
 								.map((val, key) => {
-									return <div key={val.Tipo}>
+									return <div key={val.ID_Producto}>
 										<figure>
 											<img src={val.Imagen} alt="producto" />
 										</figure>
@@ -160,7 +160,7 @@ export default function Productos() {
 							{producto
 								.filter(val => val.Tipo === 'pollo')
 								.map((val, key) => {
-									return <div key={val.Tipo}>
+									return <div key={val.ID_Producto}>
 										<figure>
 											<img src={val.Imagen} alt="producto" />
 										</figure>
@@ -182,7 +182,7 @@ export default function Productos() {
 							{producto
 								.filter(val => val.Tipo === 'pescado')
 								.map((val, key) => {
-									return <div key={val.Tipo}>
+									return <div key={val.ID_Producto}>
 										<figure>
 											<img src={val.Imagen} alt="producto" />
 										</figure>

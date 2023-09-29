@@ -201,7 +201,7 @@ app.post("/createse",(req,res)=>{
     const  Total= req.body.Total
     const ID_Cliente = req.body.ID_Cliente
 
-    db.query('INSERT INTO Factura (Fecha,Total,ID_Cliente) VALUES(?,?,?)',[Fecha,Total,ID_Cliente],
+    db.query('INSERT INTO Factura (Fecha,Total,ID_Cliente,) VALUES(?,?,?)',[Fecha,Total,ID_Cliente],
     (err,result)=>{
         if(err){
             console.log("err");
@@ -254,62 +254,3 @@ app.delete("/deletese/:ID_Factura",(req,res)=>{
     })
 })
 
-
-
-app.post("/creare",(req,res)=>{
-    const ID_Factura = req.body.ID_Factura
-    const  ID_Producto= req.body.ID_Producto
-    const Cantidad = req.body.Cantidad
-
-    db.query('INSERT INTO DetalleFactura (ID_Factura,ID_Producto,Cantidad) VALUES(?,?,?)',[ID_Factura,ID_Producto,Cantidad],
-    (err,result)=>{
-        if(err){
-            console.log("err");
-        }else{
-            res.send("registro echo")
-        }
-    }
-    );
-});
-
-app.get("/DetalleFactura",(req,res)=>{
-    db.query('SELECT * FROM DetalleFactura',
-    (err,result)=>{
-        if(err){
-            console.log(err);
-        }else{
-            res.send(result);
-        }
-    });
-});
-
-
-app.put("/actualizare",(req,res)=>{
-    const ID_Detalle = req.body.ID_Detalle
-    const ID_Factura = req.body.ID_Factura
-    const  ID_Producto= req.body.ID_Producto
-    const Cantidad = req.body.Cantidad
-
-    db.query('UPDATE DetalleFactura SET ID_Factura=?,ID_Producto=?,Cantidad=? WHERE ID_Detalle=?' ,[ID_Factura,ID_Producto,Cantidad,ID_Detalle],
-    (err,result)=>{
-        if(err){
-            console.log(err);
-        }else{
-            res.send("actualizacio echo")
-        }
-    }
-    );
-});
-
-app.delete("/borrare/:ID_Detalle",(req,res)=>{
-    const ID_Detalle = req.params.ID_Detalle
-    console.log('se fue ')
-    db.query('DELETE FROM DetalleFactura WHERE ID_Detalle = ?',[ID_Detalle],
-    (err,result)=>{
-        if(err){
-            console.log(err)
-        }else{
-            res.send("se eliminó melo")
-        }
-    })
-})
