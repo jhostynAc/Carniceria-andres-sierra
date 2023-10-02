@@ -90,7 +90,7 @@ export default function Librocont() {
                 <div class="container">
                     <div class="card text-center">
                         <div class="card-header">
-                            Empleados
+                            Libros contables
                         </div>
                         <div className="card-body">
                             <div className="input-group mb-3">

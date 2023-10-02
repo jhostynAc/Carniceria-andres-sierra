@@ -87,7 +87,7 @@ export default function Siscostos() {
                 <div class="container">
                     <div class="card text-center">
                         <div class="card-header">
-                            Empleados
+                            Sistema de costos
                         </div>
                         <div className="card-body">
                             <div className="input-group mb-3">
