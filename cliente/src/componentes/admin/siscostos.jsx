@@ -1,28 +1,32 @@
 import { Link } from "react-router-dom"
-import "./detallefactu.css"
+import "./siscostos.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from "react";
 import Axios from "axios";
 
-export default function Detallefactu() {
-    const [ID_Detalle, setID_Detalle] = useState(0);
-    const [ID_Factura, setID_Factura] = useState("");
-    const [ID_Producto, setID_Producto] = useState("");
+export default function Siscostos() {
+    const [ID_siscostos, setID_siscostos] = useState("")
+    const [Fecha, setFecha] = useState("");
     const [Cantidad, setCantidad] = useState("");
+    const [Descripcion, setDescripcion] = useState("");
+    const [Costo_uni, setCosto_uni] = useState("");
+    const [CostoTotal, setCostoTotal] = useState("");
     const [andres_sierraList, setAndressierra] = useState([])
     const [editar, setEditar] = useState(false);
 
     const add = () => {
-        Axios.post("http://localhost:3005/creare", {
-            ID_Factura:ID_Factura,
-            ID_Producto:ID_Producto,
-            Cantidad:Cantidad
+        Axios.post("http://localhost:3005/createsese", {
+            Fecha: Fecha,
+            Cantidad: Cantidad,
+            Descripcion: Descripcion,
+            Costo_uni: Costo_uni,
+            CostoTotal: CostoTotal,
         }).then(() => {
             console.log('llega')
         });
     }
     const getAndres_sierra = () => {
-        Axios.get("http://localhost:3005/DetalleFactura").then((response) => {
+        Axios.get("http://localhost:3005/siscostos").then((response) => {
             setAndressierra(response.data);
         })
     }
@@ -30,32 +34,39 @@ export default function Detallefactu() {
 
     const editarAndres_sierra = (val) => {
         setEditar(true);
-        setID_Detalle(val.ID_Detalle)
-        setID_Factura(val.ID_Factura)
-        setID_Producto(val.ID_Producto)
+        setID_siscostos(val.ID_siscostos)
+        setFecha(val.Fecha)
         setCantidad(val.Cantidad)
+        setDescripcion(val.Descripcion)
+        setCosto_uni(val.Costo_uni)
+        setCostoTotal(val.CostoTotal)
     }
     const eliminar = (val) => {
         console.log(val)
-        Axios.delete(`http://localhost:3005/borrare/${val.ID_Detalle}`, {
-            ID_Detalle: ID_Detalle
+        Axios.delete(`http://localhost:3005/deletesese/${val.ID_siscostos}`, {
+            ID_siscostos: ID_siscostos
         }).then(() => {
             getAndres_sierra()
         })
     }
     const limpiar = () => {
-        setID_Factura('')
-        setID_Producto('')
+        setFecha('')
         setCantidad('')
+        setDescripcion('')
+        setCosto_uni('')
+        setCostoTotal('')
     }
     const update = () => {
-        Axios.put("http://localhost:3005/actualizare", {
-            ID_Detalle:ID_Detalle,    
-            ID_Factura:ID_Factura,
-            ID_Producto:ID_Producto,
-            Cantidad:Cantidad
+        Axios.put("http://localhost:3005/updatesese", {
+            ID_siscostos:ID_siscostos,  
+            Fecha: Fecha,
+            Cantidad: Cantidad,
+            Descripcion: Descripcion,
+            Costo_uni: Costo_uni,
+            CostoTotal: CostoTotal,
         })
     }
+
     return (
         <body>
             <nav>
@@ -65,29 +76,39 @@ export default function Detallefactu() {
                     <Link to={"/producto"} >Producto</Link>
                     <Link to={"/cliente"}>cliente</Link>
                     <Link to={"/factura"} >factura</Link>
-                    <Link to={"/detallefactu"} class="activa">Detalle factura</Link>
+                    <Link to={"/empleado"}>Empleado</Link>
+                    <Link to={"/siscostos"} class="activa">Sistema costos</Link>
+                    <Link to={"/librocont"}>Libro Contable</Link>
                     <Link to={"/"}><img src="https://img.icons8.com/puffy/100/ffffff/experimental-home-puffy.png" alt="" className="home" /></Link>
                 </li>
-                
+
             </nav>
             <div className="cont">
                 <div class="container">
                     <div class="card text-center">
                         <div class="card-header">
-                            Detalle factura
+                            Empleados
                         </div>
                         <div className="card-body">
                             <div className="input-group mb-3">
-                                <span className="input-group-text" id="basic-addon1">ID factura:</span>
-                                <input type="text" value={ID_Factura} onChange={(event) => { setID_Factura(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <span className="input-group-text" id="basic-addon1">Fecha:</span>
+                                <input type="date" value={Fecha} onChange={(event) => { setFecha(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
-                                <span className="input-group-text" id="basic-addon1">ID producto:</span>
-                                <input type="text" value={ID_Producto} onChange={(event) => { setID_Producto(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
-                            </div>
-                            <div class="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Cantidad:</span>
                                 <input type="text" value={Cantidad} onChange={(event) => { setCantidad(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                            </div>
+                            <div className="input-group mb-3">
+                                <span className="input-group-text" id="basic-addon1">Descripcion:</span>
+                                <input type="text" value={Descripcion} onChange={(event) => { setDescripcion(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                            </div>
+                            <div class="input-group mb-3">
+                                <span className="input-group-text" id="basic-addon1">Costo unitario:</span>
+                                <input type="text" value={Costo_uni} onChange={(event) => { setCosto_uni(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                            </div>
+                            <div class="input-group mb-3">
+                                <span className="input-group-text" id="basic-addon1">Costo total:</span>
+                                <input type="text" value={CostoTotal} onChange={(event) => { setCostoTotal(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                         </div>
                         <div className="card-footer text-body-secondary">
@@ -103,20 +124,22 @@ export default function Detallefactu() {
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th scope="col">ID Detalle</th>
-                                    <th scope="col">ID factura </th>
-                                    <th scope="col">ID producto</th>
+                                    <th scope="col">Fecha</th>
                                     <th scope="col">Cantidad</th>
+                                    <th scope="col">Descripcion</th>
+                                    <th scope="col">Costo unitario</th>
+                                    <th scope="col">Costo total</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {
                                     andres_sierraList.map((val, key) => {
-                                        return <tr key={val.ID_Detalle}>
-                                            <td>{val.ID_Detalle}</td>
-                                            <td>{val.ID_Factura}</td>
-                                            <td>{val.ID_Producto}</td>
+                                        return <tr key={val.ID_siscostos}>
+                                            <td>{val.Fecha}</td>
                                             <td>{val.Cantidad}</td>
+                                            <td>{val.Descripcion}</td>
+                                            <td>{val.Costo_uni}</td>
+                                            <td>{val.CostoTotal}</td>
                                             <td>
                                                 <div className="btn-group" role="group" aria-label="Basic example">
                                                     <button type="button" onClick={() => { editarAndres_sierra(val) }} className="btn btn-warning">editar</button>
@@ -133,6 +156,5 @@ export default function Detallefactu() {
                 </div>
             </div>
         </body>
-
     )
 }

@@ -8,13 +8,14 @@ import Principal from './componentes/inicio/Inicio';
 import Contacto from './componentes/contactenos/contacto';
 import Conocenos from './componentes/conocenos/conocenos';
 import Productos from './componentes/productos/productos';
-import Ventas from './componentes/admin/producto';
 import Proveedor from './componentes/admin/Proveedor';
 import MiFormulario from './componentes/encuesta/encuesta';
 import Cliente from './componentes/admin/cliente';
 import Producto from './componentes/admin/producto';
 import Factura from './componentes/admin/factura';
-import Detallefactu from './componentes/admin/detallefactu';
+import Empleado from './componentes/admin/empleado';
+import Siscostos from './componentes/admin/siscostos';
+import Librocont from './componentes/admin/librocont';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -30,7 +31,9 @@ root.render(
     <Route path='producto' element={<Producto/>}></Route>
     <Route path='cliente' element={<Cliente/>}></Route>
     <Route path='factura' element={<Factura/>}></Route>
-    <Route path='detallefactu' element={<Detallefactu/>}></Route>
+    <Route path='empleado' element={<Empleado/>}></Route>
+    <Route path='siscostos' element={<Siscostos/>}></Route>
+    <Route path='librocont' element={<Librocont/>}></Route>
     <Route path='formulario' element={<MiFormulario/>}></Route> 
   </Routes>
   </BrowserRouter>

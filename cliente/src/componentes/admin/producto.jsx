@@ -77,7 +77,9 @@ export default function Producto() {
                     <Link to={"/producto"} class="activa">Producto</Link>
                     <Link to={"/cliente"}>cliente</Link>
                     <Link to={"/factura"}>factura</Link>
-                    <Link to={"/detallefactu"}>Detalle factura</Link>
+                    <Link to={"/empleado"} >Empleado</Link>
+                    <Link to={"/siscostos"} >Sistema costos</Link>
+                    <Link to={"/librocont"}>Libro Contable</Link>
                     <Link to={"/"}><img src="https://img.icons8.com/puffy/100/ffffff/experimental-home-puffy.png" alt="" className="home" /></Link>
                 </li>
 
