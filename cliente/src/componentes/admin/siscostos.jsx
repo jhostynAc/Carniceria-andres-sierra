@@ -74,7 +74,6 @@ export default function Siscostos() {
                 <li >
                     <Link to={"/proveedor"}>Proveedor</Link>
                     <Link to={"/producto"} >Producto</Link>
-                    <Link to={"/cliente"}>cliente</Link>
                     <Link to={"/factura"} >factura</Link>
                     <Link to={"/empleado"}>Empleado</Link>
                     <Link to={"/siscostos"} class="activa">Sistema costos</Link>

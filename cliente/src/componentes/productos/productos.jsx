@@ -111,44 +111,40 @@ export default function Productos() {
 						<hr />
 					</div>
 					<div class="container-items">
-						<div class="item">
-							{producto
-								.filter(val => val.Tipo === 'cerdo')
-								.map((val, key) => {
-									return <div key={val.ID_Producto}>
-										<figure>
-											<img src={val.Imagen} alt="producto" />
-										</figure>
-										<div class="info-product">
-											<h2>{val.Nombre}</h2>
-											<p class="price">$ {val.Precio}</p>
-											<button class="btn-add-cart">Añadir al carrito</button>
-										</div>									
+						{producto
+							.filter(val => val.Tipo === 'cerdo')
+							.map((val) => (
+								<div key={val.ID_Producto} className="item">
+									<figure>
+										<img src={val.Imagen} alt="producto" />
+									</figure>
+									<div class="info-product">
+										<h2>{val.Nombre}</h2>
+										<p class="price">$ {val.Precio}</p>
+										<button class="btn-add-cart">Añadir al carrito</button>
 									</div>
-								})}
-						</div>
+								</div>
+							))}
 					</div>
 					<div className='separador_productos' id='res'>
 						<img src="https://img.icons8.com/dotty/100/cuts-of-beef.png" alt="" />
 						<hr />
 					</div>
 					<div class="container-items">
-						<div class="item">
-							{producto
-								.filter(val => val.Tipo === 'res')
-								.map((val, key) => {
-									return <div key={val.ID_Producto}>
-										<figure>
-											<img src={val.Imagen} alt="producto" />
-										</figure>
-										<div class="info-product">
-											<h2>{val.Nombre}</h2>
-											<p class="price">$ {val.Precio}</p>
-											<button class="btn-add-cart">Añadir al carrito</button>
-										</div>
+						{producto
+							.filter(val => val.Tipo === 'res')
+							.map((val) => (
+								<div key={val.ID_Producto} className="item">
+									<figure>
+										<img src={val.Imagen} alt="producto" />
+									</figure>
+									<div class="info-product">
+										<h2>{val.Nombre}</h2>
+										<p class="price">$ {val.Precio}</p>
+										<button class="btn-add-cart">Añadir al carrito</button>
 									</div>
-								})}
-						</div>
+								</div>
+							))}
 					</div>
 
 					<div className='separador_productos' id='pollo'>
@@ -156,44 +152,40 @@ export default function Productos() {
 						<hr />
 					</div>
 					<div class="container-items">
-						<div class="item">
-							{producto
-								.filter(val => val.Tipo === 'pollo')
-								.map((val, key) => {
-									return <div key={val.ID_Producto}>
-										<figure>
-											<img src={val.Imagen} alt="producto" />
-										</figure>
-										<div class="info-product">
-											<h2>{val.Nombre}</h2>
-											<p class="price">$ {val.Precio}</p>
-											<button class="btn-add-cart">Añadir al carrito</button>
-										</div>
+						{producto
+							.filter(val => val.Tipo === 'pollo')
+							.map((val) => (
+								<div key={val.ID_Producto} className="item">
+									<figure>
+										<img src={val.Imagen} alt="producto" />
+									</figure>
+									<div class="info-product">
+										<h2>{val.Nombre}</h2>
+										<p class="price">$ {val.Precio}</p>
+										<button class="btn-add-cart">Añadir al carrito</button>
 									</div>
-								})}
-						</div>
+								</div>
+							))}
 					</div>
 					<div className='separador_productos' id='pescado'>
 						<img src="https://img.icons8.com/dotty/100/clown-fish.png" alt="" />
 						<hr />
 					</div>
 					<div class="container-items">
-						<div class="item">
-							{producto
-								.filter(val => val.Tipo === 'pescado')
-								.map((val, key) => {
-									return <div key={val.ID_Producto}>
-										<figure>
-											<img src={val.Imagen} alt="producto" />
-										</figure>
-										<div class="info-product">
-											<h2>{val.Nombre}</h2>
-											<p class="price">$ {val.Precio}</p>
-											<button class="btn-add-cart">Añadir al carrito</button>
-										</div>
+						{producto
+							.filter(val => val.Tipo === 'pescado')
+							.map((val) => (
+								<div key={val.ID_Producto} className="item">
+									<figure>
+										<img src={val.Imagen} alt="producto" />
+									</figure>
+									<div class="info-product">
+										<h2>{val.Nombre}</h2>
+										<p class="price">$ {val.Precio}</p>
+										<button class="btn-add-cart">Añadir al carrito</button>
 									</div>
-								})}
-						</div>
+								</div>
+							))}
 					</div>
 				</div>
 			</body>

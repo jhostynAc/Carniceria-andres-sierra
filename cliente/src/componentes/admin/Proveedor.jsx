@@ -59,7 +59,6 @@ export default function Proveedor() {
                 <li >
                     <Link to={"/proveedor"} class="activa">Proveedor</Link>
                     <Link to={"/producto"}>Producto</Link>
-                    <Link to={"/cliente"}>Cliente</Link>
                     <Link to={"/factura"}>factura</Link>
                     <Link to={"/empleado"} >Empleado</Link>
                     <Link to={"/siscostos"} >Sistema costos</Link>

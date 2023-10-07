@@ -10,7 +10,6 @@ import Conocenos from './componentes/conocenos/conocenos';
 import Productos from './componentes/productos/productos';
 import Proveedor from './componentes/admin/Proveedor';
 import MiFormulario from './componentes/encuesta/encuesta';
-import Cliente from './componentes/admin/cliente';
 import Producto from './componentes/admin/producto';
 import Factura from './componentes/admin/factura';
 import Empleado from './componentes/admin/empleado';
@@ -29,7 +28,6 @@ root.render(
     <Route path='productos' element={<Productos/>}></Route>
     <Route path='proveedor' element={<Proveedor/>}></Route>
     <Route path='producto' element={<Producto/>}></Route>
-    <Route path='cliente' element={<Cliente/>}></Route>
     <Route path='factura' element={<Factura/>}></Route>
     <Route path='empleado' element={<Empleado/>}></Route>
     <Route path='siscostos' element={<Siscostos/>}></Route>

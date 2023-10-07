@@ -45,13 +45,13 @@ export default function Principal() {
                     <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
                         <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/chicken.png" />
                         <Card.Body>
-                            <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Pollo</Button>
+                        <Link to="/productos#pollo"><Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Pollo</Button></Link>
                         </Card.Body>
                     </Card> 
                     <Card style={{ width: '18rem',alignItems:'center',backgroundColor:'#161a1d',border:'none'  }}>
                         <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/clown-fish.png" />
                         <Card.Body>
-                            <Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Pescado</Button>
+                        <Link to="/productos#pescado"><Button variant="primary" style={{backgroundColor:'#660708',border:'none'}}>Pecado</Button></Link>
                         </Card.Body>
                     </Card>
                     </div>

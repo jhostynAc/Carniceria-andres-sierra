@@ -6,7 +6,7 @@ export default function Conocenos() {
         <>
             <body>
                 <nav>
-                   <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                    <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
                     <li >
                         <Link to={"/"}>Inicio</Link>
                         <Link to={"/conocenos"} class="activa">Quienes somos</Link>
@@ -26,15 +26,35 @@ export default function Conocenos() {
                     <div className="izquierda">
                         <div className="mision">
                             <h2 className="mision">Misión</h2>
-                            <h3 className="">Somos una carnicería dedicada a la prestación de servicio
-                                al público, brindando productos de calidad y bajo costo a nuestros clientes.</h3>
+                            <h3 className="">Nuestra misión es
+                             superar las expectativas de nuestros 
+                             clientes en todo momento, llevando nuestros
+                             productos cárnicos de calidad y frescura
+                             excepcional, que se ajusten a las preferencias
+                             y estilos de vida de nuestros compradores, para 
+                             ser reconocidos como una empresa innovadora comercializando,
+                             distribuyendo nuestros productos para que a medida del tiempo
+                              se pueda establecer una nueva sede donde se encuentre el mejor
+                               servicio y la mejor calidad..</h3>
                         </div>
                         <div className="vision">
 
                             <h2 className="mision">Visión</h2>
-                            <h3 className="">Para el año 2026 la carnicería Andrés Sierra prestará de sus
-                                servicios por todo Santa Elena, siendo asi un referente de carnes de calidad por
-                                todo el corregimiento.</h3>
+                            <h3 className="">
+                                Nos visualizamos como una empresa líder en el mercado, 
+                                ofreciendo una amplia gama de productos cárnicos que sean
+                                 reconocidos por su calidad, frescura, consistencia, y la 
+                                 fomentación del consumo de productos para promover una alimentación 
+                                 equilibrada y nutritiva al llegar a los 10 años, estableceremos alianzas 
+                                 estratégicas con proveedores y distribuidores a nivel global, expandiendo 
+                                 así nuestra presencia nacional de manera significativa, en un plazo de 15 
+                                 años, la empresa se consolidara como líder indiscutible en la industria cárnica,
+                                  reconocida por su enfoque en la calidad, innovación y responsabilidad ambiental, 
+                                  mirando 20 años en el futuro seremos un modelo a seguir en la industria alimentaria,
+                                   inspirando a otras compañías adoptar modelos de negocios responsables y amigables,
+                                    nuestra historia será un testimonio de como la visión a largo plazo y la innovación 
+                                    pueden forjar un futuro exitoso y sostenible.
+                            </h3>
                         </div>
                     </div>
                     <aside className="imgbody">

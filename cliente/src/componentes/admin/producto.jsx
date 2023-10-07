@@ -75,7 +75,6 @@ export default function Producto() {
                 <li >
                     <Link to={"/proveedor"}>Proveedor</Link>
                     <Link to={"/producto"} class="activa">Producto</Link>
-                    <Link to={"/cliente"}>cliente</Link>
                     <Link to={"/factura"}>factura</Link>
                     <Link to={"/empleado"} >Empleado</Link>
                     <Link to={"/siscostos"} >Sistema costos</Link>

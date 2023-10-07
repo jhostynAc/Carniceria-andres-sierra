@@ -136,74 +136,16 @@ app.delete("/borrar/:ID_Producto",(req,res)=>{
         }
     })
 })
-app.post("/creates",(req,res)=>{
-    const Nombre = req.body.Nombre
-    const Direccion = req.body.Direccion
-    const Telefono = req.body.Telefono
-    const CorreoElectronico = req.body.CorreoElectronico
-
-    db.query('INSERT INTO Cliente (Nombre,Direccion,Telefono,CorreoElectronico) VALUES(?,?,?,?)',[Nombre,Direccion,Telefono,CorreoElectronico],
-    (err,result)=>{
-        if(err){
-            console.log("err");
-        }else{
-            res.send("registro echo")
-        }
-    }
-    );
-});
-
-app.get("/cliente",(req,res)=>{
-    db.query('SELECT * FROM Cliente',
-    (err,result)=>{
-        if(err){
-            console.log(err);
-        }else{
-            res.send(result);
-        }
-    });
-});
-
-
-app.put("/updates",(req,res)=>{
-    const ID_Cliente =req.body.ID_Cliente
-    const Nombre = req.body.Nombre
-    const Direccion = req.body.Direccion
-    const Telefono = req.body.Telefono
-    const CorreoElectronico = req.body.CorreoElectronico
-
-    db.query('UPDATE Cliente SET Nombre=?,Direccion=?,Telefono=?,CorreoElectronico=? WHERE ID_Cliente=?' ,[Nombre,Direccion,Telefono,CorreoElectronico,ID_Cliente],
-    (err,result)=>{
-        if(err){
-            console.log(err);
-        }else{
-            res.send("actualizacio echo")
-        }
-    }
-    );
-});
-
-app.delete("/deletes/:ID_Cliente",(req,res)=>{
-    const ID_Cliente = req.params.ID_Cliente
-    console.log('se fue ')
-    db.query('DELETE FROM Cliente WHERE ID_Cliente = ?',[ID_Cliente],
-    (err,result)=>{
-        if(err){
-            console.log(err)
-        }else{
-            res.send("se eliminó melo")
-        }
-    })
-})
-
 app.post("/createse",(req,res)=>{
-    const Fecha = req.body.Fecha
+    const Cedula = req.body.Cedula
+    const Nombre = req.body.Nombre
+    const Direccion = req.body.Direccion
+    const Especificacion = req.body.Especificacion
     const Cantidad = req.body.Cantidad
+    const Fecha = req.body.Fecha
     const  Total= req.body.Total
-    const ID_Cliente = req.body.ID_Cliente
-    const ID_Producto = req.body.ID_Producto
 
-    db.query('INSERT INTO Factura (Fecha,Cantidad,Total,ID_Cliente,ID_Producto) VALUES(?,?,?,?,?)',[Fecha,Cantidad,Total,ID_Cliente,ID_Producto],
+    db.query('INSERT INTO Factura (Cedula,Nombre,Direccion,Especificacion,Cantidad,Fecha,Total) VALUES(?,?,?,?,?,?,?)',[Cedula,Nombre,Direccion,Especificacion,Cantidad,Fecha,Total],
     (err,result)=>{
         if(err){
             console.log("err");
@@ -228,13 +170,15 @@ app.get("/factura",(req,res)=>{
 
 app.put("/updatese",(req,res)=>{
     const ID_Factura = req.body.ID_Factura
-    const Fecha = req.body.Fecha
+    const Cedula = req.body.Cedula
+    const Nombre = req.body.Nombre
+    const Direccion = req.body.Direccion
+    const Especificacion = req.body.Especificacion
     const Cantidad = req.body.Cantidad
+    const Fecha = req.body.Fecha
     const  Total= req.body.Total
-    const ID_Cliente = req.body.ID_Cliente
-    const ID_Producto = req.body.ID_Producto
 
-    db.query('UPDATE Factura SET Fecha=?,Cantidad=?,Total=?,ID_Cliente=?,ID_Producto=? WHERE ID_Factura=?' ,[Fecha,Cantidad,Total,ID_Cliente,ID_Producto,ID_Factura],
+    db.query('UPDATE Factura SET Cedula=?,Nombre=?,Direccion=?,Especificacion=?,Cantidad=?,Fecha=?,Total=? WHERE ID_Factura=?' ,[Cedula,Nombre,Direccion,Especificacion,Cantidad,Fecha,Total,ID_Factura],
     (err,result)=>{
         if(err){
             console.log(err);
