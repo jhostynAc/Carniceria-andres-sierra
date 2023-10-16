@@ -5,7 +5,6 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter,Route,Routes} from "react-router-dom";
 import Principal from './componentes/inicio/Inicio';
-import Contacto from './componentes/contactenos/contacto';
 import Conocenos from './componentes/conocenos/conocenos';
 import Productos from './componentes/productos/productos';
 import Proveedor from './componentes/admin/Proveedor';
@@ -23,7 +22,6 @@ root.render(
   <Routes>
     <Route path='/' element={<Principal/>}></Route>
     <Route path='principal' element={<Principal/>}></Route>
-    <Route path='contacto' element={<Contacto/>}></Route>
     <Route path='conocenos' element={<Conocenos/>}></Route>
     <Route path='productos' element={<Productos/>}></Route>
     <Route path='proveedor' element={<Proveedor/>}></Route>

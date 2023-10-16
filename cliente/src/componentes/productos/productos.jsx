@@ -22,19 +22,18 @@ export default function Productos() {
 						<Link to={"/"} >Inicio</Link>
 						<Link to={"/conocenos"}>Quienes somos</Link>
 						<Link to={"/productos"} class="activa">Productos</Link>
-						<Link to={"/contacto"} >Contacto</Link>
 					</li>
 
 				</nav>
 				<div class="carnes">
 					<li>
+					<a href="#cerdo">
+							<img width="80" height="80" src="https://img.icons8.com/dotty/80/000000/pig.png" alt="cuts-of-pork" />
+							<p>Cerdo</p>
+						</a>
 						<a href='#res'>
 							<img width="80" height="80" src="https://img.icons8.com/dotty/80/cuts-of-beef.png" alt="cuts-of-beef" />
 							<p>Res</p>
-						</a>
-						<a href="#cerdo">
-							<img width="80" height="80" src="https://img.icons8.com/dotty/80/000000/pig.png" alt="cuts-of-pork" />
-							<p>Cerdo</p>
 						</a>
 						<a href="#pollo">
 							<img width="80" height="80" src="https://img.icons8.com/dotty/80/chicken.png" alt="chicken" />

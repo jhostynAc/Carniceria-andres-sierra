@@ -11,7 +11,6 @@ export default function Conocenos() {
                         <Link to={"/"}>Inicio</Link>
                         <Link to={"/conocenos"} class="activa">Quienes somos</Link>
                         <Link to={"/productos"}>Productos</Link>
-                        <Link to={"/contacto"}>Contacto</Link>
                     </li>
 
                 </nav>

@@ -5,44 +5,50 @@ body {
   width: 98.60vw;
 }
 
-.cuadro-exotic1_contacto{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.caja_encuesta{
   width: 100%;
-  height: 400px;
-  gap: 45px;
-}
-.cuadro-exotic1_contacto h1{
-  font-size: 40px;
-  color: #B1A7A6;
-  margin-top: 400px;
-}
-.cuadro-exotic1_contacto p{
-  font-size: 30px;
-}
-.cuadro_2{
+  height: 570px;
+  background-color: #161A1D;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  gap: 45px;
-}
-.cuadro_2  input{
-  width: 400px;
-  height: 40px;
-  border: 0;
-  border-bottom: 2px solid black;
-  outline: none;
-}
-.cuadro_2 a{
-  text-decoration: none;
-  color: #000;
-  border: 2px solid black;
-  width: 100px;
-  height: 40px;
-  display: flex;
   align-items: center;
+}
+
+.caja_encuesta h4 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.lineas {
+  position: relative;
+  text-align: center;
+}
+
+.lineas::before,
+.lineas::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 400px;
+  /* Ajusta este valor para controlar el largo de las líneas */
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+.lineas::before {
+  left: 150px;
+}
+
+.lineas::after {
+  right: 150px;
+}
+
+.con {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  margin-top: 3.5%;
 }
