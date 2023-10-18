@@ -27,7 +27,7 @@ export default function Productos() {
 				</nav>
 				<div class="carnes">
 					<li>
-					<a href="#cerdo">
+						<a href="#cerdo">
 							<img width="80" height="80" src="https://img.icons8.com/dotty/80/000000/pig.png" alt="cuts-of-pork" />
 							<p>Cerdo</p>
 						</a>
@@ -106,7 +106,7 @@ export default function Productos() {
 				<div>
 
 					<div className='separador_productos' id='cerdo'>
-					<img src="https://img.icons8.com/dotty/100/pig.png" alt="Cerdo" />
+						<img src="https://img.icons8.com/dotty/100/pig.png" alt="Cerdo" />
 						<hr />
 					</div>
 					<div class="container-items">

@@ -9,7 +9,7 @@ export default function Principal() {
             <body>
                 <div className="caja">
                     <nav>
-                        <Link to={"proveedor"}><img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" /></Link>
+                        <Link to={"login"}><img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" /></Link>
                         <li >
                             <Link to={"/"} class="activa">Inicio</Link>
                             <Link to={"/conocenos"}>Quienes somos</Link>
