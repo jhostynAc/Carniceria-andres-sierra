@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 import "../admin/login.css"
 import { useState } from "react"
 import Axios from "axios";
@@ -10,9 +10,19 @@ export default function Login() {
     function handleSubmit(event){
         event.preventDefault();
         Axios.post('http://localhost:3005/login',{Nombre,Contraseña})
-        .then(res => console.log(res))
+        .then(res => {
+            console.log(res) 
+              if ((res.data) == "inicio sesion") {
+                function redireccion(){
+                    window.location.href= '/Proveedor'
+                }
+                redireccion();
+         }
+        } )
+       
         .catch(err => console.log(err));
     }
+
     return (
         <>
             <body>
@@ -26,7 +36,7 @@ export default function Login() {
                     <form className="formulario" onSubmit={handleSubmit}>
                         <input type="email"  placeholder="Usuario" onChange={e => setNombre(e.target.value)}/>
                         <input type="password"  placeholder=" Contraseña" onChange={e => setContraseña(e.target.value)}/>
-                        <a href="proveedor" onClick ={handleSubmit}>aasda</a>
+                         <a href="proveedor" onClick ={handleSubmit}>botón</a>
                     </form>
                 </div>
             </body>

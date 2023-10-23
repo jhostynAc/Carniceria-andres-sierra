@@ -15,6 +15,7 @@ import Empleado from './componentes/admin/empleado';
 import Siscostos from './componentes/admin/siscostos';
 import Librocont from './componentes/admin/librocont';
 import Login from './componentes/admin/login';
+import Compra from './componentes/productos/factura';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,6 +34,7 @@ root.render(
     <Route path='librocont' element={<Librocont/>}></Route>
     <Route path='formulario' element={<MiFormulario/>}></Route> 
     <Route path='login' element={<Login/>}></Route>
+    <Route path='compra' element={<Compra/>}></Route>
   </Routes>
   </BrowserRouter>
 );

@@ -10,7 +10,6 @@ export default function Factura() {
     const [Nombre, setNombre] = useState("");
     const [Direccion, setDireccion] = useState("");
     const [Especificacion, setEspecificacion] = useState("");
-    const [Cantidad, setCantidad] = useState("");
     const [Fecha, setFecha] = useState("");
     const [Total, setTotal] = useState("");
     const [andres_sierraList, setAndressierra] = useState([])
@@ -22,7 +21,6 @@ export default function Factura() {
             Nombre: Nombre,
             Direccion: Direccion,
             Especificacion: Especificacion,
-            Cantidad: Cantidad,
             Fecha: Fecha,
             Total: Total,
         }).then(() => {
@@ -43,7 +41,6 @@ export default function Factura() {
         setNombre(val.Nombre)
         setDireccion(val.Direccion)
         setEspecificacion(val.Especificacion)
-        setCantidad(val.Cantidad)
         setFecha(val.Fecha)
         setTotal(val.Total)
     }
@@ -60,7 +57,6 @@ export default function Factura() {
         setNombre('')
         setDireccion('')
         setEspecificacion('')
-        setCantidad('')
         setFecha('')
         setTotal('')
     }
@@ -71,7 +67,6 @@ export default function Factura() {
             Nombre: Nombre,
             Direccion: Direccion,
             Especificacion: Especificacion,
-            Cantidad: Cantidad,
             Fecha: Fecha,
             Total: Total,
         })
@@ -115,10 +110,6 @@ export default function Factura() {
                                 <input type="text" value={Especificacion} onChange={(event) => { setEspecificacion(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
-                                <span className="input-group-text" id="basic-addon1">Cantidad:</span>
-                                <input type="text" value={Cantidad} onChange={(event) => { setCantidad(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
-                            </div>
-                            <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Fecha:</span>
                                 <input type="date" value={Fecha} onChange={(event) => { setFecha(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
@@ -145,7 +136,6 @@ export default function Factura() {
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Direccion</th>
                                     <th scope="col">Especificacion</th>
-                                    <th scope="col">Cantidad</th>
                                     <th scope="col">Fecha</th>
                                     <th scope="col">Total</th>
                                 </tr>
@@ -159,7 +149,6 @@ export default function Factura() {
                                             <td>{val.Nombre}</td>
                                             <td>{val.Direccion}</td>
                                             <td>{val.Especificacion}</td>
-                                            <td>{val.Cantidad}</td>
                                             <td>{val.Fecha}</td>
                                             <td>{val.Total}</td>
                                             <td>

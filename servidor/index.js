@@ -141,11 +141,10 @@ app.post("/createse", (req, res) => {
     const Nombre = req.body.Nombre
     const Direccion = req.body.Direccion
     const Especificacion = req.body.Especificacion
-    const Cantidad = req.body.Cantidad
     const Fecha = req.body.Fecha
     const Total = req.body.Total
 
-    db.query('INSERT INTO Factura (Cedula,Nombre,Direccion,Especificacion,Cantidad,Fecha,Total) VALUES(?,?,?,?,?,?,?)', [Cedula, Nombre, Direccion, Especificacion, Cantidad, Fecha, Total],
+    db.query('INSERT INTO Factura (Cedula,Nombre,Direccion,Especificacion,Fecha,Total) VALUES(?,?,?,?,?,?)', [Cedula, Nombre, Direccion, Especificacion, Fecha, Total],
         (err, result) => {
             if (err) {
                 console.log("err");
@@ -174,11 +173,10 @@ app.put("/updatese", (req, res) => {
     const Nombre = req.body.Nombre
     const Direccion = req.body.Direccion
     const Especificacion = req.body.Especificacion
-    const Cantidad = req.body.Cantidad
     const Fecha = req.body.Fecha
     const Total = req.body.Total
 
-    db.query('UPDATE Factura SET Cedula=?,Nombre=?,Direccion=?,Especificacion=?,Cantidad=?,Fecha=?,Total=? WHERE ID_Factura=?', [Cedula, Nombre, Direccion, Especificacion, Cantidad, Fecha, Total, ID_Factura],
+    db.query('UPDATE Factura SET Cedula=?,Nombre=?,Direccion=?,Especificacion=?,Fecha=?,Total=? WHERE ID_Factura=?', [Cedula, Nombre, Direccion, Especificacion, Cantidad, Fecha, Total, ID_Factura],
         (err, result) => {
             if (err) {
                 console.log(err);

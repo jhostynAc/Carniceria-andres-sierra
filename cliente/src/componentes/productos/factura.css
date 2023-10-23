@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98.60vw;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 30px;
+    color: #ffffff;
+}
+
+.activa {
+    border-top: 6px solid #e5383b;
+    padding: 2px;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 85px;
+}
+
+nav img {
+    width: 120px;
+    height: 120px;
+    padding: 12px;
+}
+.factura{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.factura h3{
+    margin-top: 25px;
+}
+.factura_formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+.factura_formulario input{
+    width: 350px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.factura_formulario textarea{
+    width: 350px;
+    height: 35px;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.factura_formulario button{
+    width: 200px;
+    height: 45px;
+    background-color: #8a1618;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    margin-left: 80px;
+    margin-top: 25px;
+}
+.cuadro_form{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 25px;
+}
