@@ -34,7 +34,9 @@ export default function Login() {
                 </nav>
                 <div className="contenedor-login">
                     <form className="formulario" onSubmit={handleSubmit}>
+                        <label htmlFor="">Usuario</label>
                         <input type="email"  placeholder="Usuario" onChange={e => setNombre(e.target.value)}/>
+                        <label htmlFor="">Contraseña</label>
                         <input type="password"  placeholder=" Contraseña" onChange={e => setContraseña(e.target.value)}/>
                          <a href="proveedor" onClick ={handleSubmit}>botón</a>
                     </form>
