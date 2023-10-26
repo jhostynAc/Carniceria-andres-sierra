@@ -95,19 +95,19 @@ export default function Siscostos() {
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Cantidad:</span>
-                                <input type="text" value={Cantidad} onChange={(event) => { setCantidad(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Cantidad} onChange={(event) => { setCantidad(event.target.value); }} class="form-control" placeholder="N° de productos" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Descripcion:</span>
-                                <input type="text" value={Descripcion} onChange={(event) => { setDescripcion(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Descripcion} onChange={(event) => { setDescripcion(event.target.value); }} class="form-control" placeholder="Descripción de la compra" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div class="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Costo unitario:</span>
-                                <input type="text" value={Costo_uni} onChange={(event) => { setCosto_uni(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Costo_uni} onChange={(event) => { setCosto_uni(event.target.value); }} class="form-control" placeholder="$" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div class="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Costo total:</span>
-                                <input type="text" value={CostoTotal} onChange={(event) => { setCostoTotal(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={CostoTotal} onChange={(event) => { setCostoTotal(event.target.value); }} class="form-control" placeholder="$" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                         </div>
                         <div className="card-footer text-body-secondary">

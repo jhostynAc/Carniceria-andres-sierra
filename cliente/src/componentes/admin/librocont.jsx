@@ -98,23 +98,23 @@ export default function Librocont() {
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Detalle:</span>
-                                <input type="text" value={Detalle} onChange={(event) => { setDetalle(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Detalle} onChange={(event) => { setDetalle(event.target.value); }} class="form-control" placeholder="Detalles" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Comprobante dia:</span>
-                                <input type="text" value={ComDia} onChange={(event) => { setComDia(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={ComDia} onChange={(event) => { setComDia(event.target.value); }} class="form-control" placeholder="..." aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div class="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Debe:</span>
-                                <input type="text" value={Debe} onChange={(event) => { setDebe(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Debe} onChange={(event) => { setDebe(event.target.value); }} class="form-control" placeholder="$" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div class="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Haber:</span>
-                                <input type="text" value={Haber} onChange={(event) => { setHaber(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Haber} onChange={(event) => { setHaber(event.target.value); }} class="form-control" placeholder="$" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div class="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Saldo:</span>
-                                <input type="text" value={Saldo} onChange={(event) => { setSaldo(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Saldo} onChange={(event) => { setSaldo(event.target.value); }} class="form-control" placeholder="$" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                         </div>
                         <div className="card-footer text-body-secondary">

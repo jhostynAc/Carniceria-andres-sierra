@@ -92,27 +92,27 @@ export default function Producto() {
                         <div className="card-body">
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">ID producto:</span>
-                                <input type="text" value={ID_Producto} onChange={(event) => { setID_producto(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={ID_Producto} onChange={(event) => { setID_producto(event.target.value); }} class="form-control" placeholder="Identificado del producto" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">URL:</span>
-                                <input type="text" value={Imagen} onChange={(event) => { setImagen(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Imagen} onChange={(event) => { setImagen(event.target.value); }} class="form-control" placeholder="Url de imagen" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Nombre:</span>
-                                <input type="text" value={Nombre} onChange={(event) => { setNombre(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Nombre} onChange={(event) => { setNombre(event.target.value); }} class="form-control" placeholder="Nombre del producto" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div class="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Precio:</span>
-                                <input type="text" value={Precio} onChange={(event) => { setPrecio(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Precio} onChange={(event) => { setPrecio(event.target.value); }} class="form-control" placeholder="$precio" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div class="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Tipo:</span>
-                                <input type="text" value={Tipo} onChange={(event) => { setTipo(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Tipo} onChange={(event) => { setTipo(event.target.value); }} class="form-control" placeholder="res,cerdo,pollo ó carne" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div class="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Id proveedor:</span>
-                                <input type="text" value={ID_proveedor} onChange={(event) => { setID_proveedor(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={ID_proveedor} onChange={(event) => { setID_proveedor(event.target.value); }} class="form-control" placeholder="provedor del producto" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                         </div>
                         <div className="card-footer text-body-secondary">

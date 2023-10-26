@@ -95,19 +95,19 @@ export default function Factura() {
                         <div className="card-body">
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Cedula:</span>
-                                <input type="text" value={Cedula} onChange={(event) => { setCedula(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Cedula} onChange={(event) => { setCedula(event.target.value); }} class="form-control" placeholder="cédua cliente" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Nombre:</span>
-                                <input type="text" value={Nombre} onChange={(event) => { setNombre(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Nombre} onChange={(event) => { setNombre(event.target.value); }} class="form-control" placeholder="Nombre del cliente" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Direccion:</span>
-                                <input type="text" value={Direccion} onChange={(event) => { setDireccion(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Direccion} onChange={(event) => { setDireccion(event.target.value); }} class="form-control" placeholder="Dirección" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Especificacion:</span>
-                                <input type="text" value={Especificacion} onChange={(event) => { setEspecificacion(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Especificacion} onChange={(event) => { setEspecificacion(event.target.value); }} class="form-control" placeholder="Especificaciones " aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Fecha:</span>
@@ -115,7 +115,7 @@ export default function Factura() {
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Total:</span>
-                                <input type="text" value={Total} onChange={(event) => { setTotal(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Total} onChange={(event) => { setTotal(event.target.value); }} class="form-control" placeholder="Total de la compra " aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                         </div>
                         <div className="card-footer text-body-secondary">

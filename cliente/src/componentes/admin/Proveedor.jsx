@@ -76,15 +76,15 @@ export default function Proveedor() {
                         <div className="card-body">
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">id_proveedor:</span>
-                                <input type="text" value={ID_proveedor} onChange={(event) => { setID_proveedor(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={ID_proveedor} onChange={(event) => { setID_proveedor(event.target.value); }} class="form-control" placeholder="ID Proveedor" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div className="input-group mb-3">
                                 <span className="input-group-text" id="basic-addon1">Empresa:</span>
-                                <input type="text" value={Empresa} onChange={(event) => { setEmpresa(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" value={Empresa} onChange={(event) => { setEmpresa(event.target.value); }} class="form-control" placeholder="Nombre de la empresa" aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                             <div class="input-group mb-3">
-                                <span className="input-group-text" id="basic-addon1">Telefono:</span>
-                                <input type="text" value={Telefono} onChange={(event) => { setTelefono(event.target.value); }} class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                <span className="input-group-text" id="basic-addon1">Teléfono:</span>
+                                <input type="text" value={Telefono} onChange={(event) => { setTelefono(event.target.value); }} class="form-control" placeholder=" Número de teléfono " aria-label="Username" aria-describedby="basic-addon1" />
                             </div>
                         </div>
                         <div className="card-footer text-body-secondary">
