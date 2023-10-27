@@ -84,6 +84,7 @@ body {
     height: auto;
     width: 70%;
     margin-top: 100px;
+    gap: 85px;
 }
 
 .derecha{
@@ -95,6 +96,7 @@ body {
     height: auto;
     width: 70%;
     margin-bottom: 100px;
+    gap: 85px;
 }
 
 footer {
