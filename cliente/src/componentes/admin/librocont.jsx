@@ -81,6 +81,7 @@ export default function Librocont() {
                     <Link to={"/empleado"}>Empleado</Link>
                     <Link to={"/siscostos"} >Sistema costos</Link>
                     <Link to={"/librocont"} class="activa">Libro Contable</Link>
+                    <Link to={"https://app.zipbooks.com/"} target="_blanck">Sofware</Link>
                     <Link to={"/"}><img src="https://img.icons8.com/puffy/100/ffffff/experimental-home-puffy.png" alt="" className="home" /></Link>
                 </li>
 
