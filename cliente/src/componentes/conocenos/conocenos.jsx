@@ -3,29 +3,32 @@ import "../conocenos/conocenos.css"
 
 export default function Conocenos() {
     return (
-        <>
-            <body>
-                <nav>
-                    <img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
-                    <li >
-                        <Link to={"/"}>Inicio</Link>
-                        <Link to={"/conocenos"} class="activa">Quienes somos</Link>
-                        <Link to={"/productos"}>Productos</Link>
-                    </li>
+        <><body>
 
+        <div className="grid">
+
+                <nav className="grid1">
+                    <img class="logo" src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+                    <li >
+                        <Link to={"/"} class="li" >Inicio</Link>
+                        <Link to={"/conocenos"} class="li activa">Quienes somos</Link>
+                        <Link to={"/productos"} class="li">Productos</Link>
+                    </li>
                 </nav>
-                <div className="caja1">
+
+                <div className="grid2">
                     <h2>QUIENES SOMOS</h2>
-                    <h4 className="">La carnicería Andrés Sierra opera con un personal con experiencia, esto
+                    <h4>La carnicería Andrés Sierra opera con un personal con experiencia, esto
                         nos convierte en un establecimiento que cuenta con un servicio optimo y satisfactorio
-                        para aquellas personas que consumen de nuestros productos.</h4>
+                        para aquellas personas que consumen de nuestros productos.
+                    </h4>
                 </div>
 
-                <div className="contenedorMVI">
-                    <div className="izquierda">
-                        <div className="mision">
-                            <h2 className="mision">Misión</h2>
-                            <h3 className="">Nuestra misión es
+                
+                    <div className="grid3">
+                            <div className="uno">
+                            <h2>Misión</h2>
+                            <h3>Nuestra misión es
                                 superar las expectativas de nuestros
                                 clientes en todo momento, llevando nuestros
                                 productos cárnicos de calidad y frescura
@@ -34,18 +37,18 @@ export default function Conocenos() {
                                 ser reconocidos como una empresa innovadora comercializando,
                                 distribuyendo nuestros productos para que a medida del tiempo
                                 se pueda establecer una nueva sede donde se encuentre el mejor
-                                servicio y la mejor calidad.</h3>
-                        </div>
-                        <aside className="imgbody">
-                            <img src="https://news.agrofystatic.com/carne-carniceria-203759.jpg?d=500x375" alt="" />
-                        </aside>
-                    </div>
-                    <div className="derecha">
-                        <div className="vision">
+                                servicio y la mejor calidad.
+                            </h3></div>
 
-                            <h2 className="mision">Visión</h2>
-                            <h3 className="">
-                                Nos visualizamos como una empresa líder en el mercado,
+                           <div className="imagen_mision">
+                              <img src="./imagenes/joven_carnico.jpg" alt="carniceria" />
+                           </div>
+                    </div>
+
+                        <div className="grid4">
+                            <div className="uno">
+                            <h2>Visión</h2>
+                            <h3>Nos visualizamos como una empresa líder en el mercado,
                                 ofreciendo una amplia gama de productos cárnicos que sean
                                 reconocidos por su calidad, frescura, consistencia, y la
                                 fomentación del consumo de productos para promover una alimentación
@@ -59,20 +62,15 @@ export default function Conocenos() {
                                 nuestra historia será un testimonio de como la visión a largo plazo y la innovación
                                 pueden forjar un futuro exitoso y sostenible.
                             </h3>
+                           </div>
+                           
                         </div>
-                        <aside className="imgbody">
-                            <img src="https://news.agrofystatic.com/carne-carniceria-203759.jpg?d=500x375" alt="" />
-                        </aside>
-                    </div>
 
-                </div>
-
-
-
+                <footer className="grid5">
+                  <h5>Copyrigth © 2023 Andres Sierra </h5>
+                </footer>
+            </div>
             </body>
-            <footer>
-                <h5>Copyrigth © 2023 Andres Sierra </h5>
-            </footer>
         </>
     )
 }

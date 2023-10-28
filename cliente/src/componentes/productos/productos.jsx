@@ -63,29 +63,32 @@ export default function Productos() {
 	return (
 		<>
 			<body>
-				<nav>
-					<img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
+				<nav className="menu">
+					<img className='logo' src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" />
 					<li >
-						<Link to={"/"} >Inicio</Link>
-						<Link to={"/conocenos"}>Quienes somos</Link>
-						<Link to={"/productos"} class="activa">Productos</Link>
+						<Link to={"/"} class="li" >Inicio</Link>
+						<Link to={"/conocenos"} class="li">Quienes somos</Link>
+						<Link to={"/productos"} class="activa li">Productos</Link>
 					</li>
 
 				</nav>
 				<div class="carnes">
-					<li>
+						<li>
 						<a href="#cerdo">
 							<img width="80" height="80" src="https://img.icons8.com/dotty/80/000000/pig.png" alt="cuts-of-pork" />
 							<p>Cerdo</p>
-						</a>
+						</a></li>
+						<li>
 						<a href='#res'>
 							<img width="80" height="80" src="https://img.icons8.com/dotty/80/cuts-of-beef.png" alt="cuts-of-beef" />
 							<p>Res</p>
-						</a>
+						</a></li>
+						<li>
 						<a href="#pollo">
 							<img width="80" height="80" src="https://img.icons8.com/dotty/80/chicken.png" alt="chicken" />
 							<p>Pollo</p>
-						</a>
+						</a></li>
+						<li>
 						<a href="#pescado">
 							<img width="80" height="80" src="https://img.icons8.com/dotty/80/clown-fish.png" alt="killed-fish" />
 							<p>Pescado</p>

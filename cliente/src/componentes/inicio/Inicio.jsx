@@ -92,8 +92,7 @@ export default function Principal() {
                         <Link className="Link" to={"https://maps.app.goo.gl/uKUGiEft1bgqz6Bp8"} target="_blanck"><li className="largo">
                             <img src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/ffffff/external-location-social-media-interface-anggara-basic-outline-anggara-putra.png" alt="" />
                             PUNTO DE VENTA
-                            LA GRANJA, Vía Vda. Mazo, Santa Elena,
-                            Medellín, Antioquia</li></Link>
+                            LA GRANJA, Vía Vda. Mazo, Santa Elena,Medellín, Antioquia</li></Link>
                     </div>
                 </div>
                 <footer>
