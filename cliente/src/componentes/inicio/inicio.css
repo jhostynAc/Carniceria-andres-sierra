@@ -1,13 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 98.0vw;
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url("https://cdn.shopify.com/s/files/1/0086/1064/4028/products/PRIME_NYStrip9-1200x1200-Raw_JUL19_1200x1200.jpg?v=1563808017");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+.grid{
+    min-height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: 20% auto auto auto auto;
+    gap: 0;
+    margin: 0;
+}
+
+.menu{
+    grid-column: 1/2;
+   grid-row: 1/2;
+   position: sticky;
+   top: 0;
+}
+
+
 nav {
-    width: 100%;
-    height: 140px;
+    position: sticky;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -15,24 +42,19 @@ nav {
     top: 0;
     transition: 0.7s;
     background-color: black;
-
 }
 
-nav.bajar_1 {
-    position: fixed;
-    transition: 0.7s;
-    width: 100%;
-    height: 100px;
-    color: black;
-    z-index: 3;
-    background-color: rgba(0, 0, 0, 0.233);
-    backdrop-filter: blur(15px);
+.logo{
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 nav a {
     text-decoration: none;
     font-size: 20px;
-    margin: 30px;
+    margin: 20px;
     color: #ffffff;
 }
 
@@ -43,46 +65,44 @@ nav a {
 
 nav li {
     list-style: none;
-    margin-left: 85px;
+    margin-left: 20px;
 }
 
-nav img {
-    width: 120px;
-    height: 120px;
-    padding: 12px;
-    margin-left: 50px;
-}
 
-.caja {
-    width: 100%;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
+
+.inform{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 100%;
     background-image: url("https://cdn.shopify.com/s/files/1/0086/1064/4028/products/PRIME_NYStrip9-1200x1200-Raw_JUL19_1200x1200.jpg?v=1563808017");
     background-size: cover;
+    filter: contrast(50%);
     background-repeat: no-repeat;
-}
+    background-position: center;
+    
+    
+ }
 
-.inform {
-    max-width: 1000px;
-    height: 600px;
-    margin-left: 6%;
-    margin-top: 10%;
-}
 
-.inform h1 {
+.calidad {
+    margin-left: 30px;
+    margin-top: 30px;
     color: #ffffff;
     font-size: 55px;
 }
 
-.inform p {
+.frase {
+    width: 1000px;
+    margin-left: 30px;
+    margin-top: 30px;
     color: #ffffff;
     font-size: 23px;
+    margin-bottom: 30px;
 }
 
-.caja_inicio {
-    width: 100%;
-    height: 600px;
+.caja_inicio{
+    grid-row: 3/4;
+    grid-column: 1/2;
     background-color: #161A1D;
     display: flex;
     flex-direction: column;
@@ -127,6 +147,71 @@ nav img {
     margin-right: 10%;
     margin-top: 3.5%;
 }
+
+
+
+.caja2_inicio {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-color: #161A1D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja2_inicio h4 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.conte {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+}
+
+.Linktarjetas {
+    text-decoration: none;
+}
+
+.tarjeta {
+    width: 220px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.tarjeta:hover{
+    box-shadow: 0px 0px 5px 5px  rgba(128, 128, 128, 0.219);
+    border-radius: 10px;
+    transition-duration: unset;
+}
+.tarjeta img {
+    width: 100%;
+    height: 300px;
+}
+
+.tarjeta h3 {
+    font-size: 35px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 5px;
+}
+
+.tarjeta p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
 
 .caja2_inicio {
     width: 100%;
@@ -191,8 +276,8 @@ nav img {
 }
 
 .footer {
-    width: 100%;
-    height: 450px;
+    grid-column: 1/2;
+    grid-row: 5/6;
     display: flex;
     flex-direction: row;
     background-color: #161A1D;
@@ -206,10 +291,17 @@ nav img {
     color: #ffffff;
 }
 
+.dos{
+    width: 450px;
+    height: 250px;
+    color: #ffffff;
+}
+
 .info li {
     max-width: 400px;
     margin-top: 25px;
     font-size: 20px;
+    list-style: none;
 }
 
 .Link {
@@ -249,4 +341,303 @@ footer {
 footer img {
     margin-top: -10px;
     margin-left: 25px;
+}
+
+@media screen and (max-width:1400px) {
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (max-width:1100px) {
+    .con{
+        height: 400px;
+        width: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .calidad{
+        display: flex;
+        justify-content: center;
+    }
+
+    .frase{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width:950px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conte{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (max-width:900px) {
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+
+    .conte{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    .menu li{
+        font-size: 15px;
+    }
+
+    .conte{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (max-width:780px) {
+    .conte{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-around;
+
+    }
+
+    .con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+
+    .tarjeta {
+        width: 200px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .caja2_inicio{
+        height: 450px;
+    }
+
+    .li{
+        font-size: 15px;
+    }
+ 
+}
+
+@media screen and (max-width:660px) {
+    .con{
+        height: 400px;
+    }
+
+    .li{
+        font-size: 12px;
+    }
+
+    .activa{
+        font-size: 12px;
+    }
+
+    .logo{
+        width: 110px;
+        height: 110px;
+    }
+    
+}
+
+@media screen and (max-width:610px) {
+    .logo{
+        display: none;
+    }
+    .menu {
+        width: 100vw;
+        display: inline;
+        align-items: center;
+    }
+
+    .inform{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .frase{
+        margin-right: 20px;
+        width: 60%;
+    }
+
+    
+}
+
+
+@media screen and (max-width:500px) {
+    .logo{
+        display: none;
+    }
+
+    .menu{
+        width: 100vw;
+        display: inline;
+        height: 100px;
+        margin-top: 20px;
+        margin-right: 20px;
+        padding: 20px;
+    } 
+
+    .info h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .largo{
+        font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .conte{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        width: 100px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .caja2_inicio{
+        height: 700px;
+    }
+
+    
+} 
+
+@media screen and (max-width:440px) {
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .info .largo{
+        font-size: 8px;
+    }
+
+    .info li{
+        font-size: 10px;
+    }
+
+    .calidad{
+        font-size: 35px;
+
+    }
+
+    .inform{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .frase{
+        margin-right: 20px;
+        width: 60%;
+    }
+
+    .menu{
+        display: inline;
+        align-items: center;
+    }
+
+
+    
+} 
+
+@media screen and (max-width:400px) {
+    .inform{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .frase{
+        margin-right: 20px;
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width:350px){
+
+   .menu{
+    border-bottom: 2px solid gray;
+   }
+
+
+    .li{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:330px) {
+    .activa{
+        display: none;
+    }
+    
 }
