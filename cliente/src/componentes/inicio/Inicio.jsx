@@ -6,47 +6,46 @@ import Card from 'react-bootstrap/Card';
 export default function Principal() {
     return (
         <>
-            <body>
-                <div className="caja">
-                    <nav>
-                        <Link to={"login"}><img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" /></Link>
+        <body>
+            
+        
+        <div className="grid">
+                    <nav className="menu">
+                        <Link className="logo" to={"login"}><img src="./imagenes/Sin título-1_Mesa de trabajo 1.png" alt="" /></Link>
                         <li >
-                            <Link to={"/"} class="activa">Inicio</Link>
-                            <Link to={"/conocenos"}>Quienes somos</Link>
-                            <Link to={"/productos"}>Productos</Link>
+                            <Link className="li activa" to={"/"} class="activa">Inicio</Link>
+                            <Link className="li" to={"/conocenos"}>Quienes somos</Link>
+                            <Link className="li" to={"/productos"}>Productos</Link>
                         </li>
-
                     </nav>
                     <div className="inform">
-                        <h1>Calidad y corte</h1>
-                        <p>
+                        <h1 className="calidad">Calidad y corte</h1>
+                        <p className="frase">
                             En nuestra carnicería, nos enorgullecemos de ofrecer los cortes de carne más frescos y sabrosos, seleccionados cuidadosamente para satisfacer los paladares más exigentes. Desde hace generaciones, hemos sido parte de la comunidad, sirviendo productos cárnicos de la más alta calidad con un toque de autenticidad que nos distingue.
                         </p>
                     </div>
-
-                </div>
-                <div className="caja_inicio">
+            <div className="caja_inicio">
                     <h4 className="lineas">Catalogo</h4>
                     <div className="con">
-                        <Card style={{ width: '18rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
+                        <Card style={{ width: '8rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
                             <Card.Img variant="top" src="https://img.icons8.com/dotty/500/ffffff/pig.png" />
                             <Card.Body>
                                 <Link to="/productos#cerdo"><Button variant="primary" style={{ backgroundColor: '#660708', border: 'none' }}>Cerdo</Button></Link>
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '18rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
+                        <Card style={{ width: '8rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
                             <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/cuts-of-beef.png" />
                             <Card.Body>
                                 <Link to="/productos#res"><Button variant="primary" style={{ backgroundColor: '#660708', border: 'none' }}>Res</Button></Link>
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '18rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
+                        <Card style={{ width: '8rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
                             <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/chicken.png" />
                             <Card.Body>
                                 <Link to="/productos#pollo"><Button variant="primary" style={{ backgroundColor: '#660708', border: 'none' }}>Pollo</Button></Link>
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '18rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
+                        <Card style={{ width: '8rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
                             <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/clown-fish.png" />
                             <Card.Body>
                                 <Link to="/productos#pescado"><Button variant="primary" style={{ backgroundColor: '#660708', border: 'none' }}>Pecado</Button></Link>
@@ -83,24 +82,25 @@ export default function Principal() {
                         <Link className="Link" to={'https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61551804040542%26mibextid%3DLQQJ4d'} target="_blanck"><li><img src="https://img.icons8.com/ios-glyphs/24/ffffff/facebook.png" alt="" />Carniceria andres sierra</li></Link>
                         <Link className="Link" to={'https://www.tiktok.com/@carniceria_andres_sierra?lang=es'} target="_blanck"><li><img src="https://img.icons8.com/ios-glyphs/24/ffffff/tiktok.png" alt="" /> @carniceria_andres_sierra</li></Link>
                     </div>
-                    <div className="info">
+                    <div className="info dos">
                         <h3>Horarios y politica</h3>
                         <li><img src="https://img.icons8.com/material-outlined/24/ffffff/user--v1.png" alt="" /> lunes a domingo de 7:30 Am a 7:30 Pm</li>
                         <li><img src="https://img.icons8.com/external-line-zulfa-mahendra/24/ffffff/external-delivery-food-delivery-line-zulfa-mahendra.png" alt="" /> Domicilios a partir de los  50.000</li>
                     </div>
-                    <div className="info">
+                    <div className="info dos">
                         <h3>sede</h3>
-                        <Link className="Link" to={"https://maps.app.goo.gl/uKUGiEft1bgqz6Bp8"} target="_blanck"><li>
+                        <Link className="Link" to={"https://maps.app.goo.gl/uKUGiEft1bgqz6Bp8"} target="_blanck"><li className="largo">
                             <img src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/ffffff/external-location-social-media-interface-anggara-basic-outline-anggara-putra.png" alt="" />
                             PUNTO DE VENTA
                             LA GRANJA, Vía Vda. Mazo, Santa Elena,
                             Medellín, Antioquia</li></Link>
                     </div>
                 </div>
-            </body >
-            <footer>
+                <footer>
                 <h5>Copyrigth © 2023 Andres Sierra </h5>
             </footer>
+                </div>
+                </body>
         </>
     )
 }
