@@ -10,7 +10,6 @@ body {
     align-items: center;
     width: 100vw;
     overflow-x: hidden;
-    background-image: url("https://cdn.shopify.com/s/files/1/0086/1064/4028/products/PRIME_NYStrip9-1200x1200-Raw_JUL19_1200x1200.jpg?v=1563808017");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -80,14 +79,13 @@ nav li {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+    padding: 80px;
     
  }
 
 
 .calidad {
     margin-left: 30px;
-    margin-top: 30px;
     color: #ffffff;
     font-size: 55px;
 }
