@@ -38,7 +38,7 @@ export default function Login() {
                         <input type="email"  placeholder="Usuario" onChange={e => setNombre(e.target.value)}/>
                         <label htmlFor="">Contraseña</label>
                         <input type="password"  placeholder=" Contraseña" onChange={e => setContraseña(e.target.value)}/>
-                         <a href="proveedor" onClick ={handleSubmit}>botón</a>
+                         <a href="proveedor" onClick ={handleSubmit}>Ingresar</a>
                     </form>
                 </div>
             </body>
