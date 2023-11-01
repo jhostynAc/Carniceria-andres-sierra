@@ -27,25 +27,25 @@ export default function Principal() {
             <div className="caja_inicio">
                     <h4 className="lineas">Catalogo</h4>
                     <div className="con">
-                        <Card style={{ width: '8rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
+                        <Card style={{ width: '15rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
                             <Card.Img variant="top" src="https://img.icons8.com/dotty/500/ffffff/pig.png" />
                             <Card.Body>
                                 <Link to="/productos#cerdo"><Button variant="primary" style={{ backgroundColor: '#660708', border: 'none' }}>Cerdo</Button></Link>
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '8rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
+                        <Card style={{ width: '15rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
                             <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/cuts-of-beef.png" />
                             <Card.Body>
                                 <Link to="/productos#res"><Button variant="primary" style={{ backgroundColor: '#660708', border: 'none' }}>Res</Button></Link>
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '8rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
+                        <Card style={{ width: '15rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
                             <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/chicken.png" />
                             <Card.Body>
                                 <Link to="/productos#pollo"><Button variant="primary" style={{ backgroundColor: '#660708', border: 'none' }}>Pollo</Button></Link>
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '8rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
+                        <Card style={{ width: '15rem', alignItems: 'center', backgroundColor: '#161a1d', border: 'none' }}>
                             <Card.Img variant="top" src="https://img.icons8.com/dotty/500/FFFFFF/clown-fish.png" />
                             <Card.Body>
                                 <Link to="/productos#pescado"><Button variant="primary" style={{ backgroundColor: '#660708', border: 'none' }}>Pecado</Button></Link>

@@ -7,11 +7,12 @@ body {
 
 .caja_encuesta{
   width: 100%;
-  height: 570px;
-
+  height: auto;
+  padding: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: black;
+  align-items: center; 
 }
 
 .caja_encuesta h4 {
@@ -46,9 +47,11 @@ body {
 .con {
   width: 100%;
   display: flex;
+  height: auto;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-right: 10%;
   margin-top: 3.5%;
+  gap: 25px;
 }
